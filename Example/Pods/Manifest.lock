@@ -1,0 +1,16 @@
+PODS:
+  - MYPEmotionKeyboard (0.1.0)
+
+DEPENDENCIES:
+  - MYPEmotionKeyboard (from `../`)
+
+EXTERNAL SOURCES:
+  MYPEmotionKeyboard:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MYPEmotionKeyboard: 8fbbea3996e579d9f9c2c7821ea6240a97882c92
+
+PODFILE CHECKSUM: 3311034059931a8b2a1e4ea1df44e6b6fb22b9d0
+
+COCOAPODS: 1.5.2

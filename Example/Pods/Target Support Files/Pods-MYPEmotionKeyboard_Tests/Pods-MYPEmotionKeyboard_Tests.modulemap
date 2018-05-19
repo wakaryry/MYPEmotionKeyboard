@@ -1,0 +1,6 @@
+framework module Pods_MYPEmotionKeyboard_Tests {
+  umbrella header "Pods-MYPEmotionKeyboard_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module MYPEmotionKeyboard {
+  umbrella header "MYPEmotionKeyboard-umbrella.h"
+
+  export *
+  module * { export * }
+}
