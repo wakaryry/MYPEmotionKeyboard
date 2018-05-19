@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MYPEmotionKeyboard_Example' do
+  pod 'MYPEmotionKeyboard', :path => '../'
+
+  target 'MYPEmotionKeyboard_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
