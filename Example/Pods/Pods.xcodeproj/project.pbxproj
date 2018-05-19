@@ -17,6 +17,7 @@
 		D56E82C53E0CCC00726430CC87014583 /* MYPEmotionKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B37E6293DF1D7717CE754EADA487ADDA /* MYPEmotionKeyboard-dummy.m */; };
 		E51FE788A9704048E52B6A84A639A96A /* Pods-MYPEmotionKeyboard_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C62A820E1C4CE638EA15CCCDC3251EAC /* Pods-MYPEmotionKeyboard_Tests-dummy.m */; };
 		E9B3F27720B05C2C0029C45C /* MYPEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3F27620B05C2C0029C45C /* MYPEmotion.swift */; };
+		E9B3F27920B05D9B0029C45C /* MYPEmotionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3F27820B05D9B0029C45C /* MYPEmotionSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		E29DAC16E0E63D5C8F8FA512432DF6F0 /* Pods-MYPEmotionKeyboard_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MYPEmotionKeyboard_Example-umbrella.h"; sourceTree = "<group>"; };
 		E3E152A2EE727B8CB19531F9342DDCC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9B3F27620B05C2C0029C45C /* MYPEmotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MYPEmotion.swift; path = MYPEmotionKeyboard/Classes/MYPEmotion.swift; sourceTree = "<group>"; };
+		E9B3F27820B05D9B0029C45C /* MYPEmotionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MYPEmotionSet.swift; path = MYPEmotionKeyboard/Classes/MYPEmotionSet.swift; sourceTree = "<group>"; };
 		E9ED189CD8A5DB89D6BBE89800E08806 /* Pods-MYPEmotionKeyboard_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MYPEmotionKeyboard_Tests.modulemap"; sourceTree = "<group>"; };
 		ED5E2AAD52AE043954DDABF1F2AC1E7F /* Pods-MYPEmotionKeyboard_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MYPEmotionKeyboard_Tests-resources.sh"; sourceTree = "<group>"; };
 		F6447C29C9D82B55E9C79DE2B8D728C5 /* Pods-MYPEmotionKeyboard_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MYPEmotionKeyboard_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				E9B3F27620B05C2C0029C45C /* MYPEmotion.swift */,
+				E9B3F27820B05D9B0029C45C /* MYPEmotionSet.swift */,
 				213B133EAA739144BE142D5AA9ACD97C /* Pod */,
 				2497C063668889442C8BF6753CE7CCF6 /* Support Files */,
 			);
@@ -345,6 +348,7 @@
 			files = (
 				D56E82C53E0CCC00726430CC87014583 /* MYPEmotionKeyboard-dummy.m in Sources */,
 				E9B3F27720B05C2C0029C45C /* MYPEmotion.swift in Sources */,
+				E9B3F27920B05D9B0029C45C /* MYPEmotionSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
