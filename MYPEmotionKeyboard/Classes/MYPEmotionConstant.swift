@@ -32,6 +32,10 @@ internal let MYPEmotionSmallNumber: CGFloat = 7
 
 internal let MYPEmotionBigNumber: CGFloat = 4
 
+internal let MYPEmotionSmallLineNumber: CGFloat = 3
+
+internal let MYPEmotionBigLineNumber: CGFloat = 2
+
 internal let MYPEmotionMenuHeight: CGFloat = 44
 
 internal let MYPEmotionMenuWidth: CGFloat = 60

@@ -23,6 +23,7 @@ public class MYPEmotionView: UIView {
         }
     }
     
+    /** when we change emotionSet, we must change the isSmallItem. This will update the emotion view*/
     fileprivate var isSmallItem = true {
         didSet {
             let number = self.isSmallItem ? MYPEmotionSmallNumber : MYPEmotionBigNumber
@@ -47,7 +48,9 @@ public class MYPEmotionView: UIView {
             
             self.emotionCollection.reloadData()
             
-            var page = self.emotions.count / 20
+            let numbers = self.isSmallItem ? Int(MYPEmotionSmallLineNumber * MYPEmotionSmallNumber - 1) : Int(MYPEmotionBigLineNumber * MYPEmotionBigNumber - 1)
+            
+            var page = self.emotions.count / numbers
             page = (self.emotions.count - page * 20) >= 1 ? (page + 1) : page
             self.pageControl.numberOfPages = page
         }
@@ -90,5 +93,35 @@ public class MYPEmotionView: UIView {
         self.emotionCollection.isPagingEnabled = true
         
         self.emotionCollection.reloadData()
+        
+        var page = self.emotions.count / Int(MYPEmotionSmallLineNumber * MYPEmotionSmallNumber - 1)
+        page = (self.emotions.count - page * 20) >= 1 ? (page + 1) : page
+        self.pageControl.numberOfPages = page
     }
+}
+
+extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
+    public func numberOfSections(in collectionView: UICollectionView) -> Int {
+        if collectionView == self.emotionCollection {
+            return self.emotions.count
+        }
+        else {
+            return 1
+        }
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == self.emotionCollection {
+            return self.emotions.count
+        }
+        else {
+            return self.emotionSetsAll.count
+        }
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: <#T##String#>, for: <#T##IndexPath#>)
+    }
+    
+    
 }
