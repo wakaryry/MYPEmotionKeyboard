@@ -62,6 +62,11 @@
                 <constraint firstItem="P1J-Hf-P8m" firstAttribute="top" secondItem="05G-eY-50u" secondAttribute="bottom" id="jpf-OV-OfS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="emotionCollection" destination="05G-eY-50u" id="ST3-fs-pmc"/>
+                <outlet property="emotionMenuCollection" destination="h3M-9i-D7g" id="o4f-P3-eis"/>
+                <outlet property="pageControl" destination="P1J-Hf-P8m" id="XzH-AM-iAu"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>

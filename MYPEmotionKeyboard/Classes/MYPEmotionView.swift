@@ -9,4 +9,8 @@ import Foundation
 
 public class MYPEmotionView: UIView {
     
+    @IBOutlet weak var emotionCollection: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var emotionMenuCollection: UICollectionView!
+    
 }

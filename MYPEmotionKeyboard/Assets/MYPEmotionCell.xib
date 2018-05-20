@@ -16,19 +16,21 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M08-5F-xeD">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Phm-VE-6Ae">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <state key="normal" title="Button"/>
-                </button>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="M08-5F-xeD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4aU-b3-qss"/>
-                <constraint firstItem="M08-5F-xeD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9G0-Wi-Tbh"/>
-                <constraint firstItem="M08-5F-xeD" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="K59-Mr-Vyc"/>
-                <constraint firstItem="M08-5F-xeD" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Skk-mp-UDX"/>
+                <constraint firstItem="Phm-VE-6Ae" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4jr-Kq-ODH"/>
+                <constraint firstItem="Phm-VE-6Ae" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Fe9-fh-cQ1"/>
+                <constraint firstItem="Phm-VE-6Ae" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dEk-N7-VML"/>
+                <constraint firstItem="Phm-VE-6Ae" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ixK-PD-lzG"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="emotionImageView" destination="Phm-VE-6Ae" id="Kc7-uq-2Ll"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
