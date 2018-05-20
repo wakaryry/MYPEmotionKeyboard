@@ -22,7 +22,8 @@ public class MYPEmotionView: UIView {
             }
         }
     }
-    public var isSmallItem = true {
+    
+    fileprivate var isSmallItem = true {
         didSet {
             let number = self.isSmallItem ? MYPEmotionSmallNumber : MYPEmotionBigNumber
             let height = self.isSmallItem ? MYPEmotionSmallHeight : MYPEmotionBigHeight
@@ -43,6 +44,8 @@ public class MYPEmotionView: UIView {
             
             // init emotion collection view
             self.emotionCollection.collectionViewLayout = layout
+            
+            self.emotionCollection.reloadData()
             
             var page = self.emotions.count / 20
             page = (self.emotions.count - page * 20) >= 1 ? (page + 1) : page
