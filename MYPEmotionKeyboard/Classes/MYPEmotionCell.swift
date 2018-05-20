@@ -25,9 +25,10 @@ public class MYPEmotionCell: UICollectionViewCell {
             self.emotionImageView.image = nil
             return
         }
-        self.emotion = emotion
+        self.emotion = e
         self.isDelete = false
-        if let path = TSConfig.ExpressionBundle!.path(forResource: model.imageString, ofType:"png") {
+        if let path = MYPEmotionBundle?.path(forResource: e.name, ofType: "png") {
+        
             self.emotionImageView.image = UIImage(contentsOfFile: path)
         }
     }
@@ -35,7 +36,7 @@ public class MYPEmotionCell: UICollectionViewCell {
     func setDeleteCellContnet() {
         self.emotion = nil
         self.isDelete = true
-        self.emotionImageView.image = TSAsset.Emotion_delete.image
+        self.emotionImageView.image = UIImage(contentsOfFile: (MYPEmotionBundle?.path(forResource: "delete-emoji", ofType: "png"))!)
     }
     
     override public func awakeFromNib() {

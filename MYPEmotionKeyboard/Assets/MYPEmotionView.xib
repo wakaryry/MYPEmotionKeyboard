@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="05G-eY-50u">
+                <collectionView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="05G-eY-50u" customClass="MYPEmotionCollectionView" customModule="MYPEmotionKeyboard" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Baa-nN-ddc">
@@ -55,10 +55,10 @@
                 <constraint firstItem="h3M-9i-D7g" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Agh-Ml-gzT"/>
                 <constraint firstItem="05G-eY-50u" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Bgw-fl-PfQ"/>
                 <constraint firstItem="05G-eY-50u" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Dbr-QS-rXM"/>
+                <constraint firstItem="h3M-9i-D7g" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="OF0-ik-fkW"/>
                 <constraint firstItem="P1J-Hf-P8m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ONF-CZ-LYE"/>
                 <constraint firstItem="05G-eY-50u" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Vb3-HU-ofm"/>
                 <constraint firstItem="h3M-9i-D7g" firstAttribute="top" secondItem="P1J-Hf-P8m" secondAttribute="bottom" id="bIR-bQ-KS5"/>
-                <constraint firstItem="h3M-9i-D7g" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="cg9-eN-YFa"/>
                 <constraint firstItem="P1J-Hf-P8m" firstAttribute="top" secondItem="05G-eY-50u" secondAttribute="bottom" id="jpf-OV-OfS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

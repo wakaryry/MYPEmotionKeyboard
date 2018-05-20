@@ -21,3 +21,13 @@ internal var MYPEmotionBundle: Bundle? {
     return bundle
 }
 
+/** big emotion item*/
+internal let MYPEmotionBigHeight: CGFloat = 75.0
+
+/** small emotion item*/
+internal let MYPEmotionSmallHeight: CGFloat = 50.0
+
+/** number of emotion items in one line*/
+internal let MYPEmotionSmallNumber: CGFloat = 7
+
+internal let MYPEmotionBigNumber: CGFloat = 4
