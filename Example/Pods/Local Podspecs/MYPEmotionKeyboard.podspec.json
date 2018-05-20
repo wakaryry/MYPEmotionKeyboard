@@ -1,22 +1,28 @@
 {
   "name": "MYPEmotionKeyboard",
   "version": "0.1.0",
-  "summary": "A short description of MYPEmotionKeyboard.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/mayuping321@163.com/MYPEmotionKeyboard",
+  "summary": "A delegant emotion keyboard.",
+  "description": "Emotion keyboard. Easy to use.",
+  "homepage": "https://github.com/wakaryry/MYPEmotionKeyboard",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "mayuping321@163.com": "redoume@163.com"
+    "wakary": "redoume@163.com"
   },
   "source": {
-    "git": "https://github.com/mayuping321@163.com/MYPEmotionKeyboard.git",
+    "git": "https://github.com/wakaryry/MYPEmotionKeyboard.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "MYPEmotionKeyboard/Classes/**/*"
+  "swift_version": "4.0",
+  "source_files": "MYPEmotionKeyboard/Classes/**/*",
+  "resource_bundles": {
+    "MYPEmotionKeyboard": [
+      "MYPEmotionKeyboard/Assets/*.png"
+    ]
+  }
 }
