@@ -22,7 +22,8 @@
   "source_files": "MYPEmotionKeyboard/Classes/**/*",
   "resource_bundles": {
     "MYPEmotionKeyboard": [
-      "MYPEmotionKeyboard/Assets/*.png"
+      "MYPEmotionKeyboard/Assets/*.png",
+      "MYPEmotionKeyboard/Assets/*.xib"
     ]
   }
 }
