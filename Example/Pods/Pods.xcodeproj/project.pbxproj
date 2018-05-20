@@ -150,6 +150,10 @@
 		E61657E601AC3BFA9511B6D0203511AF /* Expression_57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CC37C5DA18274DA254820C8C92B8E8C /* Expression_57@2x.png */; };
 		E7029D8BB9C1CDCA7DF2D7B603207A7D /* Expression_55@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DB15950CF0F422BFC951131D18E079 /* Expression_55@2x.png */; };
 		E85F86F973571E0040FF71CDE013F79F /* Expression_68@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A009321C0AE6A1F9933BA3C4CD7A56F /* Expression_68@2x.png */; };
+		E9B3F27B20B142F30029C45C /* MYPEmotionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B3F27A20B142F30029C45C /* MYPEmotionView.xib */; };
+		E9B3F27D20B143180029C45C /* MYPEmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3F27C20B143180029C45C /* MYPEmotionView.swift */; };
+		E9B3F27F20B1437C0029C45C /* MYPEmotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3F27E20B1437C0029C45C /* MYPEmotionCell.swift */; };
+		E9B3F28120B143D90029C45C /* MYPEmotionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B3F28020B143D90029C45C /* MYPEmotionCell.xib */; };
 		E9E89C3FA87AA7DCFE3138365F118960 /* haha@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341D63AF77A2A64659157EE8BACA2782 /* haha@3x.png */; };
 		EDAC7CDE623369AB5CFC38F778399C96 /* Expression_86@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C512644450E92AD8121449B573883203 /* Expression_86@2x.png */; };
 		EF3867A08C941BEF1C2CF7BF96C7D788 /* Expression_26@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7630134A729A553DF16CE58C028A7A4C /* Expression_26@2x.png */; };
@@ -209,11 +213,11 @@
 		1DFE4955C6DE8F19553601DFBFCEA80D /* Pods-MYPEmotionKeyboard_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MYPEmotionKeyboard_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		20ED96B41A04E86F1E2E4FD7017CCAE5 /* bishi@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bishi@3x.png"; path = "MYPEmotionKeyboard/Assets/bishi@3x.png"; sourceTree = "<group>"; };
 		2107903AADE7DD037C663E95B54F5D01 /* Pods-MYPEmotionKeyboard_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MYPEmotionKeyboard_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		22D59FE203AEBEF4A8B7D47F75D48DC0 /* MYPEmotionKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MYPEmotionKeyboard.framework; path = MYPEmotionKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D59FE203AEBEF4A8B7D47F75D48DC0 /* MYPEmotionKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MYPEmotionKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F3D6F6C594FAAD684C4BA33C792F56 /* haoaio.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = haoaio.png; path = MYPEmotionKeyboard/Assets/haoaio.png; sourceTree = "<group>"; };
 		2317676B90BE30162832334B0199D5FB /* Expression_75@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_75@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_75@2x.png"; sourceTree = "<group>"; };
 		23801D6261EE5DA6973960A6429A458A /* huaxin@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "huaxin@3x.png"; path = "MYPEmotionKeyboard/Assets/huaxin@3x.png"; sourceTree = "<group>"; };
-		25A006BEEAAEA03E6D04615492D75501 /* Pods_MYPEmotionKeyboard_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MYPEmotionKeyboard_Example.framework; path = "Pods-MYPEmotionKeyboard_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A006BEEAAEA03E6D04615492D75501 /* Pods_MYPEmotionKeyboard_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYPEmotionKeyboard_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27448AF726672B14A9B76EDDBD5C7648 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		288778FE3F0A2955077CF4DF70CBD221 /* Expression_76@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_76@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_76@2x.png"; sourceTree = "<group>"; };
 		288D17C891B04D6C7661C790C4FF86E5 /* Expression_29@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_29@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_29@2x.png"; sourceTree = "<group>"; };
@@ -240,13 +244,13 @@
 		455535F513E35DFC330A3ADCD307633B /* heng@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "heng@3x.png"; path = "MYPEmotionKeyboard/Assets/heng@3x.png"; sourceTree = "<group>"; };
 		4AC6723646ECE8BA5C05C2399E21DF4E /* Expression_16@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_16@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_16@2x.png"; sourceTree = "<group>"; };
 		4BC8CDE7BDC604B1A02C7EE2BA16A864 /* MYPEmotionKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MYPEmotionKeyboard-dummy.m"; sourceTree = "<group>"; };
-		4C5D056DAD9B8C3E86A2FFF6A8661FBC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4C5D056DAD9B8C3E86A2FFF6A8661FBC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4F01C25F9CAFBC225602D81AC695F995 /* haoxihuan@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "haoxihuan@2x.png"; path = "MYPEmotionKeyboard/Assets/haoxihuan@2x.png"; sourceTree = "<group>"; };
 		4FB1318104BF4D3D3434EAAB251200E5 /* MYPEmotionKeyboard.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MYPEmotionKeyboard.xcconfig; sourceTree = "<group>"; };
 		529D736E80D95B0D5CA533F92E3E1007 /* Expression_93@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_93@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_93@2x.png"; sourceTree = "<group>"; };
 		52D09DB77CAC4833BB5DC13001E596EC /* Expression_49@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_49@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_49@2x.png"; sourceTree = "<group>"; };
 		572FB49ED2DB496FAE9A5CF7B54ECC57 /* Expression_99@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_99@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_99@2x.png"; sourceTree = "<group>"; };
-		58C025D57D7716425CA20DFAA6C1F85F /* MYPEmotionKeyboard.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MYPEmotionKeyboard.bundle; path = "MYPEmotionKeyboard-MYPEmotionKeyboard.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58C025D57D7716425CA20DFAA6C1F85F /* MYPEmotionKeyboard.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYPEmotionKeyboard.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		594A26F98D15816E7AD9DE1D8A6A9574 /* Expression_31@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_31@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_31@2x.png"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5A5FD96A6A3EB8A605BEF4A9397EEBEA /* Expression_90@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_90@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_90@2x.png"; sourceTree = "<group>"; };
@@ -296,12 +300,12 @@
 		8F53ACFA9922D71D2105E558C91DC39F /* MYPEmotionKeyboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MYPEmotionKeyboard-prefix.pch"; sourceTree = "<group>"; };
 		9245D28857E5B15858C5D8AF3E9036BB /* Expression_4@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_4@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_4@2x.png"; sourceTree = "<group>"; };
 		92E3A9113A74FB495B33436F612A7AFC /* toule@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "toule@2x.png"; path = "MYPEmotionKeyboard/Assets/toule@2x.png"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		948688B443A278E5BB2D257A66503082 /* Expression_52@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_52@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_52@2x.png"; sourceTree = "<group>"; };
 		969E2D744708ABAE128BABCE88063982 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9744BEBC1FB9E496CB983375391B9BDB /* Expression_41@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_41@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_41@2x.png"; sourceTree = "<group>"; };
 		98A2AF7DA079390E5B1133CBF09A36C7 /* Pods-MYPEmotionKeyboard_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MYPEmotionKeyboard_Example.modulemap"; sourceTree = "<group>"; };
-		999E71A0CF4FFD7FE6AB36632CDA68D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		999E71A0CF4FFD7FE6AB36632CDA68D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9D35BCFE6671D80522354C9E67D4CF0C /* baibai@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "baibai@3x.png"; path = "MYPEmotionKeyboard/Assets/baibai@3x.png"; sourceTree = "<group>"; };
 		9ECFD95573FF122BC506506A24EFBD74 /* Expression_58@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_58@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_58@2x.png"; sourceTree = "<group>"; };
 		A1CD210BC0B56FF41CDD3E5C6A74757F /* Expression_66@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_66@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_66@2x.png"; sourceTree = "<group>"; };
@@ -343,11 +347,15 @@
 		DA751445E87D293A20D4A17E8F5B2246 /* Expression_64@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_64@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_64@2x.png"; sourceTree = "<group>"; };
 		DABADEFA02FE4AA7384D86D34527EDF5 /* guile@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "guile@3x.png"; path = "MYPEmotionKeyboard/Assets/guile@3x.png"; sourceTree = "<group>"; };
 		DBD6C83B407B247787B526C7649B2B71 /* Expression_2@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_2@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_2@2x.png"; sourceTree = "<group>"; };
-		DC8E627A1F37965044418AE1BB1AD456 /* Pods_MYPEmotionKeyboard_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MYPEmotionKeyboard_Tests.framework; path = "Pods-MYPEmotionKeyboard_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8E627A1F37965044418AE1BB1AD456 /* Pods_MYPEmotionKeyboard_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYPEmotionKeyboard_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC05887E7A3175D660B37CF1CFDF000 /* bizui@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bizui@3x.png"; path = "MYPEmotionKeyboard/Assets/bizui@3x.png"; sourceTree = "<group>"; };
 		E29C618404EBAC731F6718E0675140CA /* keai@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "keai@3x.png"; path = "MYPEmotionKeyboard/Assets/keai@3x.png"; sourceTree = "<group>"; };
 		E29DAC16E0E63D5C8F8FA512432DF6F0 /* Pods-MYPEmotionKeyboard_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MYPEmotionKeyboard_Example-umbrella.h"; sourceTree = "<group>"; };
-		E482C02F0BFB516702BF26C7299EFC59 /* MYPEmotionKeyboard.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MYPEmotionKeyboard.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E482C02F0BFB516702BF26C7299EFC59 /* MYPEmotionKeyboard.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = MYPEmotionKeyboard.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E9B3F27A20B142F30029C45C /* MYPEmotionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MYPEmotionView.xib; path = MYPEmotionKeyboard/Assets/MYPEmotionView.xib; sourceTree = "<group>"; };
+		E9B3F27C20B143180029C45C /* MYPEmotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MYPEmotionView.swift; path = MYPEmotionKeyboard/Classes/MYPEmotionView.swift; sourceTree = "<group>"; };
+		E9B3F27E20B1437C0029C45C /* MYPEmotionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MYPEmotionCell.swift; path = MYPEmotionKeyboard/Classes/MYPEmotionCell.swift; sourceTree = "<group>"; };
+		E9B3F28020B143D90029C45C /* MYPEmotionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MYPEmotionCell.xib; path = MYPEmotionKeyboard/Assets/MYPEmotionCell.xib; sourceTree = "<group>"; };
 		E9ED189CD8A5DB89D6BBE89800E08806 /* Pods-MYPEmotionKeyboard_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MYPEmotionKeyboard_Tests.modulemap"; sourceTree = "<group>"; };
 		EB5678534BFA393DCD44ABD6BB63542D /* ding@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ding@3x.png"; path = "MYPEmotionKeyboard/Assets/ding@3x.png"; sourceTree = "<group>"; };
 		EB79F6A573DE73522C0123FCB7E801CF /* Expression_78@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_78@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_78@2x.png"; sourceTree = "<group>"; };
@@ -429,6 +437,8 @@
 			children = (
 				CDCDE2D1945F5705EB42CC15BD92DE37 /* MYPEmotion.swift */,
 				FF9AF0B052637BF2C591F62EBB017B6C /* MYPEmotionSet.swift */,
+				E9B3F27C20B143180029C45C /* MYPEmotionView.swift */,
+				E9B3F27E20B1437C0029C45C /* MYPEmotionCell.swift */,
 				712F844669A585B5EBDA7B7ED6A554C8 /* Pod */,
 				AE150B705C52D2C1DAAC53D8CDE5C573 /* Resources */,
 				007BFDB1C17BF8969459E58E5DF2FDAB /* Support Files */,
@@ -497,6 +507,8 @@
 			isa = PBXGroup;
 			children = (
 				9D35BCFE6671D80522354C9E67D4CF0C /* baibai@3x.png */,
+				E9B3F27A20B142F30029C45C /* MYPEmotionView.xib */,
+				E9B3F28020B143D90029C45C /* MYPEmotionCell.xib */,
 				FC14613BFBCDC5AEAC8401C13FDFF994 /* beishang@3x.png */,
 				6E2C3D75B9535AE58C111B1B0867027F /* bingbujiandan@3x.png */,
 				20ED96B41A04E86F1E2E4FD7017CCAE5 /* bishi@3x.png */,
@@ -977,6 +989,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				45C72BD276181B24D38D2AD04235BD51 /* MYPEmotionKeyboard.bundle in Resources */,
+				E9B3F27B20B142F30029C45C /* MYPEmotionView.xib in Resources */,
+				E9B3F28120B143D90029C45C /* MYPEmotionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,6 +1019,8 @@
 				44E703AA844CC44449A70D6D37EFE710 /* MYPEmotion.swift in Sources */,
 				7198B4137993237D1F1E5C028E8C0072 /* MYPEmotionKeyboard-dummy.m in Sources */,
 				16FF5F8A13C471353835D06589DFCED7 /* MYPEmotionSet.swift in Sources */,
+				E9B3F27D20B143180029C45C /* MYPEmotionView.swift in Sources */,
+				E9B3F27F20B1437C0029C45C /* MYPEmotionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
