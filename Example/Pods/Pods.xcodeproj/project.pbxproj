@@ -27,7 +27,6 @@
 		13F86D3190D9D818DF9472E16688261C /* xiaohaha@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 114A224EE9A6BAA4CBE0346FCA16F0E8 /* xiaohaha@2x.png */; };
 		1539FA48B4887E7E8D0A507FF3AEF169 /* Expression_39@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0741FBBB5F5F771B1CCC1436C8383E2E /* Expression_39@2x.png */; };
 		161F4722D77297E175C2FD978D92720C /* huaixiao@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E4BA8F49622CF5A3C1C0AA81844E27 /* huaixiao@3x.png */; };
-		1658D255C8E1033DDB7A7147FCFA9446 /* ding@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7832C75C493743C1FE45525BE587449D /* ding@3x.png */; };
 		174118FD83EC55F5E872556A68D3FABC /* Expression_88@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 378EAC086F82452EEC3705B28AA5AB7B /* Expression_88@2x.png */; };
 		18541FB728CD6D9D11FAB4D9DB48ADE0 /* Expression_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 561A72E32B7B261522B15488F84C2AD7 /* Expression_10@2x.png */; };
 		1A07C84E5166ADBDF6C07AC0FBCA18D1 /* Expression_45@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8631DDF6EFAB5DF00FB5361A9F853A8 /* Expression_45@2x.png */; };
@@ -36,7 +35,6 @@
 		1DF495C113FD19674FE6389532F0D072 /* Expression_32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05724F2675963FA940A29EF4DC7388A9 /* Expression_32@2x.png */; };
 		2017A0072BAF6FB90EA8317D5EC80A08 /* guzhang@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFD6435B7D41E2249645ED402CA0F89 /* guzhang@3x.png */; };
 		22F862CDD51031C5042B97B6E4AF8ECC /* Expression_37@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B625E78E99A659B1D0A6F70F191D804 /* Expression_37@2x.png */; };
-		236CD78FD66372DFA8DE83927ABC3C1D /* baibai@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5868A995A5DA315431D046A1FC93EB6F /* baibai@3x.png */; };
 		25583908D89D556E167AF56AFB750D18 /* Pods-MYPEmotionKeyboard_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6447C29C9D82B55E9C79DE2B8D728C5 /* Pods-MYPEmotionKeyboard_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2562E74663E332DFE824F85683CE9126 /* qiuguanzhu.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F8507EAFAF85E7A5C833974D106A09 /* qiuguanzhu.png */; };
 		26DC075375A7C851E0017A2574B5E123 /* haoaio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F9BCFC0262112C8DF4BC92C54A151AA /* haoaio@2x.png */; };
@@ -45,12 +43,9 @@
 		2B18E754417DB1E8B02962FB9B2B652E /* MYPEmotionKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFD4B4085BD152BF47A9F96284FFA71B /* MYPEmotionKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C4E4FA364B2CE58981C0A7AFD1E14DE /* Expression_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D304AAF4970F5CFE9483F536C83F2EC /* Expression_4@2x.png */; };
 		2EBD12F526E19CE2428E7ABF49AF9834 /* Expression_69@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9510EF2C872FD16E4CBD7FC70F7198 /* Expression_69@2x.png */; };
-		3035ED2B58CAC291EBA59C8224EACE4A /* beishang@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8214CEF6B1315208F0C02B6759A1875D /* beishang@3x.png */; };
 		3757A4609E224CDB0FA5DA69EFC3E33B /* Expression_30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFEB8A39F0CFB871B90F0C5643E5F97 /* Expression_30@2x.png */; };
-		37879DA4FB60364E1D92C6906A1C5121 /* erha@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDFA483839A692D87DF7EB3B7732C2B /* erha@3x.png */; };
 		3CF84FCE8C2DE4696F969A26C232F47F /* Expression_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67EDD9CDAA39FFBA8A3B4662933C0A24 /* Expression_8@2x.png */; };
 		3DEB455FCFDF776B0B7A607E330D02AE /* haixiu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3411D270D149BB8642A361F6D74A171 /* haixiu@3x.png */; };
-		3FB4C095E964D66836C32F03C19E403B /* bizui@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD698DB066BE3DFF3AA752C32707470 /* bizui@3x.png */; };
 		40091A591DD39BB56CC3607BE1006513 /* Expression_28@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC92C8DB4346790849B676DB4500B2C /* Expression_28@2x.png */; };
 		43B9B7D899DBFD4305DA8D612D411A75 /* Expression_83@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB3E78B867A51D1AF31D6C53CDE6812B /* Expression_83@2x.png */; };
 		4861B5D461EC1F0A45873EF17C5B5FF4 /* haoxihuan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E53D2492D5360A09FC2B8BE2A671240 /* haoxihuan@2x.png */; };
@@ -70,13 +65,11 @@
 		5E41D015562C8C58C10AD88C453B6C57 /* Expression_41@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5CE5713BE8E2F9E0D7EA538D988F7 /* Expression_41@2x.png */; };
 		5EA3781E23545874C442C02638F50398 /* ku@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A26A92FC4424550BEC2EA57E8FAA02EF /* ku@3x.png */; };
 		6207CACEA25E4A18A06D0483D43E4038 /* Expression_95@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A131711B94D05C68F20695B9B858A7CA /* Expression_95@2x.png */; };
-		6262EBC9FE5F99D1C6A821A5967CD33B /* chijing@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6284471A42E6A6153C21FE3F5F8C3A02 /* chijing@3x.png */; };
 		64F2BB9856D99D027467DABC45B73857 /* MYPEmotionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B354E7FA9E3F43E66F99E5D1FE3F42 /* MYPEmotionCell.xib */; };
 		670478A513EFBDF7F08816006A811E9C /* Expression_40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 636960FC372495ABDB6EC8A322B32233 /* Expression_40@2x.png */; };
 		680B0377E385C5DAC92845D4E8E26E55 /* Expression_68@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF6ACA16FCF31CB0182613442195347 /* Expression_68@2x.png */; };
 		68616B75103F1991890623F80E8BC8AC /* Expression_91@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 979EA4F0B53F298F5C5D9C330F3480B2 /* Expression_91@2x.png */; };
 		68682D4D7EC483F283C68A0BFFF45292 /* Expression_54@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B8425817714A128AEAF54F5CC20C2B /* Expression_54@2x.png */; };
-		6C0E19E1A63EC832D8625F3896BABC41 /* chanzui@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15058EB335CD00975641DA7AD97B35C /* chanzui@3x.png */; };
 		7168376A432150F4C8436444468509A4 /* haoaio.png in Resources */ = {isa = PBXBuildFile; fileRef = D8424E2220EDA1E80796D6C13ED459D7 /* haoaio.png */; };
 		74BA53D7A285428B5D24140D23C3647A /* Expression_67@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D01AEE3A984B40006D6E9FF9E3AE4BA3 /* Expression_67@2x.png */; };
 		7630731AA3603AC4486E1C6412C8AAC8 /* Expression_96@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F245FC6C175C5F6156DA364B9A3887E /* Expression_96@2x.png */; };
@@ -90,10 +83,7 @@
 		83CDCB325DBE1F75E852E69132469844 /* Expression_27@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A6F69C548E4E911B9BBE8A5FDD502D /* Expression_27@2x.png */; };
 		843E58BF6248E9BAB0D41B32B5DB178A /* Expression_20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A70486C2CCE429B2DA600677A4F6AB4A /* Expression_20@2x.png */; };
 		85A9C716AA5F813E9799555B90250D0D /* Expression_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B318C0A5C7F9F3B61E83A354E1F8B39C /* Expression_1@2x.png */; };
-		863E7E5FC6D2B6B2BFF28A0AE4433C93 /* delete-emoji.png in Resources */ = {isa = PBXBuildFile; fileRef = F624D855FA1DDAA3C59534D8E777B2A2 /* delete-emoji.png */; };
 		89D2B7A87EF3CA93DA30B712251DD110 /* Expression_24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C71F5AB0AD7C4EBF74907088C189017 /* Expression_24@2x.png */; };
-		8BFCFA9F29E50AA19E456875D2D4DD2E /* chigua@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B1E50535F466BB797546A8049A24D7 /* chigua@3x.png */; };
-		8E6C7C23A13A92856C9904E213034384 /* dahaqi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C994643C3705E599D95C3A0280CD6874 /* dahaqi@3x.png */; };
 		8FAD60AAD5EF484950D65EA91C2866A7 /* Expression_19@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BB8F347FC897B68786CD0A5DC86687 /* Expression_19@2x.png */; };
 		91F2250E02C19AB0143AC9E4C201BB15 /* guile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C481AA90C1FC75D7C02B47F17E94144A /* guile@3x.png */; };
 		93451FCDB7F631F62453D0A092BB4309 /* Expression_71@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF5DC55C341EF35D4358D9CD5D328FD /* Expression_71@2x.png */; };
@@ -106,11 +96,9 @@
 		A019CEAB7C383DEC8B3E89C2F837A85A /* Expression_23@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 258E99C740DA42947432E5987F9D247E /* Expression_23@2x.png */; };
 		A02AAE6665F438195DCC076FB1479D40 /* Expression_49@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDFCCC7B38ED09DA6BCEF6FC9AB0947A /* Expression_49@2x.png */; };
 		A313554F21D9EB07337B40FA17730832 /* Expression_60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9DF2F45A561FE5F7DB64C41EBF4EE /* Expression_60@2x.png */; };
-		A582C646E306E8314B0AADD650F5D28E /* delete-emoji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E5EA19FF2AE79049CB55BC709C13ED /* delete-emoji@2x.png */; };
 		A58DA924B307A6E86CADD9AE9AC151AD /* Expression_31@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37E3AE376F3E5B38AED9B3CA1C00D0DF /* Expression_31@2x.png */; };
 		A667C5FB5594C686B389D098BF6983F8 /* feijie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08CEB17BD84C550BFEF7E214DDAC6EEE /* feijie@3x.png */; };
 		A6A4CCD0CC639A6A576FC9B5E8A07A41 /* Expression_76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 149537692E9FF66E0183B9EC3ED852F9 /* Expression_76@2x.png */; };
-		A77D0CEFAAE0DABAC8C7A8810BD4485C /* dog@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616FFD09418B78D6222852CB3C6909AE /* dog@3x.png */; };
 		A91BA0F9C5F892012180EF0B2C7F4FFF /* Expression_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4B670CE305B14C33112DCD3D14A8C32 /* Expression_50@2x.png */; };
 		A9D07839090EA8596AC207654D2C19E7 /* Expression_35@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F4D353A63F19A96711D3694289B98C7 /* Expression_35@2x.png */; };
 		AA0FA1A310ECECE5B2D57D5D59AFD765 /* Expression_79@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7383F33A39624B5C4CA31D6BF71087D0 /* Expression_79@2x.png */; };
@@ -134,12 +122,10 @@
 		CAE08A94132F2114DFAD7624DD7B1C14 /* Expression_85@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 178CB5C29B9A0F4A4C4F070D4E7B390C /* Expression_85@2x.png */; };
 		CB190A08DB19BB88E4BFD4133BAAC925 /* Expression_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3F3A5FE5BF4D8EF283FD023A29819F1 /* Expression_7@2x.png */; };
 		CB5B37B959DB1DEBF9B235D37AB81AE0 /* MYPEmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8DD71DD414920BC755D2C034D6F6D1 /* MYPEmotionView.swift */; };
-		CBCD28D459389E07AB2A2AE596093974 /* bingbujiandan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F29EFB4169C79768EA188BBE44156B16 /* bingbujiandan@3x.png */; };
 		CF1A8828113FD5A17DDCD2C8DA71CE92 /* Expression_17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ACFE4636DABE2E6636F974D69105C63 /* Expression_17@2x.png */; };
 		D2756B7B0EF81CD8D26BE26E67B92D8C /* MYPEmotionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F610EA9715146C49E742480DC6FD7D /* MYPEmotionView.xib */; };
 		D2E2C035AF1D3A42227EF4B7BE0C5137 /* Expression_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F44A98EEA3C81FCE50AF6D860AE19FFB /* Expression_2@2x.png */; };
 		D71E395098AE32F89085D286C965EF8D /* kelian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 386C94200C43A2801980E3B7EC930FD6 /* kelian@3x.png */; };
-		D7CEC0719E5AF9C2C7FF1CD73B5B7A35 /* bishi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8298A7D2F91A6E330E7D1AEE8D71960E /* bishi@3x.png */; };
 		D9838607A4387E616A0CA4C9883DAE2E /* Expression_87@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10F625AB0CC367E3F9D09F0ED3DFB6BD /* Expression_87@2x.png */; };
 		DB2DF559589F4E02B9AA20D6BD1DE887 /* Expression_36@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C98CD4AF0EA1DEB196D3B22DBF4E7A20 /* Expression_36@2x.png */; };
 		DD5349DA9AB5E8DABA6121F56590628B /* heng@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A5D4107774655370F5D964FB4D6F3FB /* heng@3x.png */; };
@@ -148,7 +134,6 @@
 		DE87F72441D92B2078D2936DEABFE4C5 /* xiudada@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5887CDFF8DD430C4BDE681A7127CF9A0 /* xiudada@2x.png */; };
 		DF37485E08A6B268A983E57352CD249E /* Expression_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C9672AC8841ABAA7F461AD09B7FEE0 /* Expression_6@2x.png */; };
 		E1C5EF23826DA568CB649DC333B6A45F /* MYPEmotionKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A17569CA2F3E7A91246D8837E4383369 /* MYPEmotionKeyboard-dummy.m */; };
-		E428363D5BB73560C2FAE473153ABB5E /* dalian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E27B9B56F375E60994CB4AC1F2C9D1 /* dalian@3x.png */; };
 		E4A8EADD0778382A7AE9EF0E2BF46427 /* Expression_75@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E165DD1E3EC5C7ADA2402B13EF941273 /* Expression_75@2x.png */; };
 		E51FE788A9704048E52B6A84A639A96A /* Pods-MYPEmotionKeyboard_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C62A820E1C4CE638EA15CCCDC3251EAC /* Pods-MYPEmotionKeyboard_Tests-dummy.m */; };
 		E83A3B7EB3DA639C91EB0F0A952C4356 /* Expression_58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B597FC5292267BBCF4A99039F56E4CE /* Expression_58@2x.png */; };
@@ -160,7 +145,6 @@
 		EF48144044CC405BDA494B90F914919E /* Expression_78@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 691D6D98FACD8777DFEB3C17FEBFF231 /* Expression_78@2x.png */; };
 		EFA82AAABCBA0DDDB5FA24480E932B5A /* Expression_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5840976ED858C998F93CEAB2CB2102C /* Expression_5@2x.png */; };
 		F352B54CA84CA09D55457F4B793457B7 /* Expression_74@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF7B70A18B09C12C350FF1F0DFF771C /* Expression_74@2x.png */; };
-		F5C41F00D9496A49B87F757D2ED1807F /* delete-emoji@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA4FAAD93BF5F1335C25277B4F48894 /* delete-emoji@3x.png */; };
 		F7B1D57660EBF2B7996AD46E8D4017BD /* Expression_38@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B8E64EE8DD59143E01E163BBA8802D1 /* Expression_38@2x.png */; };
 		F9761C08B75162A6A7E8F44852F9D8A7 /* Expression_81@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91180B84762BC8F1C14FA5488A8359A9 /* Expression_81@2x.png */; };
 		FB0B50C844D0636B51963912BEA88F7C /* qiuguanzhu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAA79BC05B6C1038F7E5FB3D2466C28 /* qiuguanzhu@2x.png */; };
@@ -204,13 +188,11 @@
 		09D1627DFCFF5C26574042F21832A51D /* Expression_90@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_90@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_90@2x.png"; sourceTree = "<group>"; };
 		0AF6ACA16FCF31CB0182613442195347 /* Expression_68@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_68@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_68@2x.png"; sourceTree = "<group>"; };
 		0B625E78E99A659B1D0A6F70F191D804 /* Expression_37@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_37@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_37@2x.png"; sourceTree = "<group>"; };
-		0CDFA483839A692D87DF7EB3B7732C2B /* erha@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "erha@3x.png"; path = "MYPEmotionKeyboard/Assets/erha@3x.png"; sourceTree = "<group>"; };
 		0D304AAF4970F5CFE9483F536C83F2EC /* Expression_4@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_4@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_4@2x.png"; sourceTree = "<group>"; };
 		0FFD6435B7D41E2249645ED402CA0F89 /* guzhang@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "guzhang@3x.png"; path = "MYPEmotionKeyboard/Assets/guzhang@3x.png"; sourceTree = "<group>"; };
 		10F625AB0CC367E3F9D09F0ED3DFB6BD /* Expression_87@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_87@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_87@2x.png"; sourceTree = "<group>"; };
 		114A224EE9A6BAA4CBE0346FCA16F0E8 /* xiaohaha@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "xiaohaha@2x.png"; path = "MYPEmotionKeyboard/Assets/xiaohaha@2x.png"; sourceTree = "<group>"; };
 		149537692E9FF66E0183B9EC3ED852F9 /* Expression_76@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_76@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_76@2x.png"; sourceTree = "<group>"; };
-		16E5EA19FF2AE79049CB55BC709C13ED /* delete-emoji@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "delete-emoji@2x.png"; path = "MYPEmotionKeyboard/Assets/delete-emoji@2x.png"; sourceTree = "<group>"; };
 		178CB5C29B9A0F4A4C4F070D4E7B390C /* Expression_85@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_85@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_85@2x.png"; sourceTree = "<group>"; };
 		1DFE4955C6DE8F19553601DFBFCEA80D /* Pods-MYPEmotionKeyboard_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MYPEmotionKeyboard_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1F355D021211BAD907DE3627B862CB25 /* Expression_55@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_55@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_55@2x.png"; sourceTree = "<group>"; };
@@ -228,7 +210,6 @@
 		25E50BE8F8FA3D841477B649F2BE0B5C /* Expression_22@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_22@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_22@2x.png"; sourceTree = "<group>"; };
 		27300A166E6BCC4D5AEA71D712592C79 /* Expression_56@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_56@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_56@2x.png"; sourceTree = "<group>"; };
 		27F18A0899BCF074E71ADAD9CA788772 /* MYPEmotionSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MYPEmotionSet.swift; path = MYPEmotionKeyboard/Classes/MYPEmotionSet.swift; sourceTree = "<group>"; };
-		2BA4FAAD93BF5F1335C25277B4F48894 /* delete-emoji@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "delete-emoji@3x.png"; path = "MYPEmotionKeyboard/Assets/delete-emoji@3x.png"; sourceTree = "<group>"; };
 		2C3D75D3704120D4878C0A32DFE08B96 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2F60B85292384C20A3A70064EF8D4D87 /* MYPEmotion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MYPEmotion.swift; path = MYPEmotionKeyboard/Classes/MYPEmotion.swift; sourceTree = "<group>"; };
 		33F774A090934E7DD9846CFBFB2CC00D /* Pods-MYPEmotionKeyboard_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MYPEmotionKeyboard_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -253,7 +234,6 @@
 		50AF923B21AE970673475910FB430436 /* toule@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "toule@2x.png"; path = "MYPEmotionKeyboard/Assets/toule@2x.png"; sourceTree = "<group>"; };
 		561A72E32B7B261522B15488F84C2AD7 /* Expression_10@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_10@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_10@2x.png"; sourceTree = "<group>"; };
 		580A68F77A222D2B2C8D41EBD383CFA7 /* Expression_12@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_12@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_12@2x.png"; sourceTree = "<group>"; };
-		5868A995A5DA315431D046A1FC93EB6F /* baibai@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "baibai@3x.png"; path = "MYPEmotionKeyboard/Assets/baibai@3x.png"; sourceTree = "<group>"; };
 		5887CDFF8DD430C4BDE681A7127CF9A0 /* xiudada@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "xiudada@2x.png"; path = "MYPEmotionKeyboard/Assets/xiudada@2x.png"; sourceTree = "<group>"; };
 		58C025D57D7716425CA20DFAA6C1F85F /* MYPEmotionKeyboard.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYPEmotionKeyboard.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		598735830F8BC466208B6BCCBB58349F /* Expression_98@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_98@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_98@2x.png"; sourceTree = "<group>"; };
@@ -265,9 +245,7 @@
 		5F245FC6C175C5F6156DA364B9A3887E /* Expression_96@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_96@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_96@2x.png"; sourceTree = "<group>"; };
 		5FA84F2EECDC16907FF158C389657F27 /* Expression_53@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_53@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_53@2x.png"; sourceTree = "<group>"; };
 		61013F6A367FD13BC5E8060F48816EE1 /* Expression_70@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_70@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_70@2x.png"; sourceTree = "<group>"; };
-		616FFD09418B78D6222852CB3C6909AE /* dog@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "dog@3x.png"; path = "MYPEmotionKeyboard/Assets/dog@3x.png"; sourceTree = "<group>"; };
 		61A23E09039BFBFE549F1A91346F162D /* Pods-MYPEmotionKeyboard_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MYPEmotionKeyboard_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6284471A42E6A6153C21FE3F5F8C3A02 /* chijing@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "chijing@3x.png"; path = "MYPEmotionKeyboard/Assets/chijing@3x.png"; sourceTree = "<group>"; };
 		62860263B30BD3747D154E10A218C48F /* MYPEmotionKeyboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MYPEmotionKeyboard-prefix.pch"; sourceTree = "<group>"; };
 		636960FC372495ABDB6EC8A322B32233 /* Expression_40@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_40@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_40@2x.png"; sourceTree = "<group>"; };
 		646616EFBFCC409C144EEF8C7F47C39A /* Pods-MYPEmotionKeyboard_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MYPEmotionKeyboard_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -286,15 +264,12 @@
 		7383F33A39624B5C4CA31D6BF71087D0 /* Expression_79@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_79@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_79@2x.png"; sourceTree = "<group>"; };
 		74E4C2A178A1BA8A09926186F54B1769 /* Pods-MYPEmotionKeyboard_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MYPEmotionKeyboard_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7757557BFA2812744B82707A24FE0782 /* heiheihei@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "heiheihei@3x.png"; path = "MYPEmotionKeyboard/Assets/heiheihei@3x.png"; sourceTree = "<group>"; };
-		7832C75C493743C1FE45525BE587449D /* ding@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ding@3x.png"; path = "MYPEmotionKeyboard/Assets/ding@3x.png"; sourceTree = "<group>"; };
 		798CDDDFFA118F2CB055E94BCC3B3F3F /* Expression_43@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_43@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_43@2x.png"; sourceTree = "<group>"; };
 		7A788AEC212B5DE66996035D8D1B2F38 /* Expression_64@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_64@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_64@2x.png"; sourceTree = "<group>"; };
 		7B21AFDC828441A706E66BDF0F605E08 /* Pods-MYPEmotionKeyboard_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MYPEmotionKeyboard_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		7B8D9CB937CDABEB043108E892EE3163 /* Expression_63@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_63@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_63@2x.png"; sourceTree = "<group>"; };
 		7FFADC6ED72AB0A3D415AAED4C21F0E3 /* Expression_15@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_15@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_15@2x.png"; sourceTree = "<group>"; };
 		80BD587A935F060A45DC6C9F3166FC30 /* xiudada.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = xiudada.png; path = MYPEmotionKeyboard/Assets/xiudada.png; sourceTree = "<group>"; };
-		8214CEF6B1315208F0C02B6759A1875D /* beishang@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "beishang@3x.png"; path = "MYPEmotionKeyboard/Assets/beishang@3x.png"; sourceTree = "<group>"; };
-		8298A7D2F91A6E330E7D1AEE8D71960E /* bishi@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bishi@3x.png"; path = "MYPEmotionKeyboard/Assets/bishi@3x.png"; sourceTree = "<group>"; };
 		829C6CD18E9351AFEE198E33040A64F4 /* Expression_21@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_21@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_21@2x.png"; sourceTree = "<group>"; };
 		84C0B230B19438AC7E9E55F4D9139F64 /* haoxihuan.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = haoxihuan.png; path = MYPEmotionKeyboard/Assets/haoxihuan.png; sourceTree = "<group>"; };
 		84D603FF3F65DAE79AC11C3966FE53DD /* Pods-MYPEmotionKeyboard_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MYPEmotionKeyboard_Example-dummy.m"; sourceTree = "<group>"; };
@@ -325,7 +300,6 @@
 		AB8893722FC308001763BB63838B3178 /* Expression_29@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_29@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_29@2x.png"; sourceTree = "<group>"; };
 		AC182A19EF8EFCAA490D5FF55667563D /* Expression_94@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_94@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_94@2x.png"; sourceTree = "<group>"; };
 		AF08870031D6AF1223AA5F23DC96323A /* jiyan@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "jiyan@3x.png"; path = "MYPEmotionKeyboard/Assets/jiyan@3x.png"; sourceTree = "<group>"; };
-		B2B1E50535F466BB797546A8049A24D7 /* chigua@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "chigua@3x.png"; path = "MYPEmotionKeyboard/Assets/chigua@3x.png"; sourceTree = "<group>"; };
 		B318C0A5C7F9F3B61E83A354E1F8B39C /* Expression_1@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_1@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_1@2x.png"; sourceTree = "<group>"; };
 		B4B670CE305B14C33112DCD3D14A8C32 /* Expression_50@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_50@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_50@2x.png"; sourceTree = "<group>"; };
 		B5840976ED858C998F93CEAB2CB2102C /* Expression_5@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_5@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_5@2x.png"; sourceTree = "<group>"; };
@@ -333,7 +307,6 @@
 		B5E781E5727DB4C23E55AFE731DBA075 /* Expression_66@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_66@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_66@2x.png"; sourceTree = "<group>"; };
 		B6A733CBC5235B591ACAEA4981B46785 /* Expression_97@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_97@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_97@2x.png"; sourceTree = "<group>"; };
 		B8631DDF6EFAB5DF00FB5361A9F853A8 /* Expression_45@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_45@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_45@2x.png"; sourceTree = "<group>"; };
-		BAD698DB066BE3DFF3AA752C32707470 /* bizui@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bizui@3x.png"; path = "MYPEmotionKeyboard/Assets/bizui@3x.png"; sourceTree = "<group>"; };
 		BB3E78B867A51D1AF31D6C53CDE6812B /* Expression_83@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_83@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_83@2x.png"; sourceTree = "<group>"; };
 		BD143A11B3319EFA5A154837AD5B9B57 /* Expression_46@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_46@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_46@2x.png"; sourceTree = "<group>"; };
 		BDFC1A4B961A759829B893BC15D85508 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -345,8 +318,6 @@
 		C8C9DE618FF8F5CD8F9DE144DEB00CBE /* ResourceBundle-MYPEmotionKeyboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MYPEmotionKeyboard-Info.plist"; sourceTree = "<group>"; };
 		C94EB9D1880DF0F4072875866D0FC127 /* Expression_11@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_11@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_11@2x.png"; sourceTree = "<group>"; };
 		C98CD4AF0EA1DEB196D3B22DBF4E7A20 /* Expression_36@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_36@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_36@2x.png"; sourceTree = "<group>"; };
-		C994643C3705E599D95C3A0280CD6874 /* dahaqi@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "dahaqi@3x.png"; path = "MYPEmotionKeyboard/Assets/dahaqi@3x.png"; sourceTree = "<group>"; };
-		C9E27B9B56F375E60994CB4AC1F2C9D1 /* dalian@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "dalian@3x.png"; path = "MYPEmotionKeyboard/Assets/dalian@3x.png"; sourceTree = "<group>"; };
 		CFD4B4085BD152BF47A9F96284FFA71B /* MYPEmotionKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MYPEmotionKeyboard-umbrella.h"; sourceTree = "<group>"; };
 		D01AEE3A984B40006D6E9FF9E3AE4BA3 /* Expression_67@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_67@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_67@2x.png"; sourceTree = "<group>"; };
 		D092CCB4DE20A20F7C6628BD24E241CD /* Expression_34@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_34@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_34@2x.png"; sourceTree = "<group>"; };
@@ -359,7 +330,6 @@
 		DC8E627A1F37965044418AE1BB1AD456 /* Pods_MYPEmotionKeyboard_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYPEmotionKeyboard_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF1708696B89FC386E9E824C1A40312 /* Expression_92@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_92@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_92@2x.png"; sourceTree = "<group>"; };
 		E0D538C0269182D8C5961C719F908F91 /* Expression_86@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_86@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_86@2x.png"; sourceTree = "<group>"; };
-		E15058EB335CD00975641DA7AD97B35C /* chanzui@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "chanzui@3x.png"; path = "MYPEmotionKeyboard/Assets/chanzui@3x.png"; sourceTree = "<group>"; };
 		E165DD1E3EC5C7ADA2402B13EF941273 /* Expression_75@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_75@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_75@2x.png"; sourceTree = "<group>"; };
 		E29DAC16E0E63D5C8F8FA512432DF6F0 /* Pods-MYPEmotionKeyboard_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MYPEmotionKeyboard_Example-umbrella.h"; sourceTree = "<group>"; };
 		E324BEBC5B8831C56317C8F3157F55CA /* toule.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = toule.png; path = MYPEmotionKeyboard/Assets/toule.png; sourceTree = "<group>"; };
@@ -373,11 +343,9 @@
 		EDFCCC7B38ED09DA6BCEF6FC9AB0947A /* Expression_49@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_49@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_49@2x.png"; sourceTree = "<group>"; };
 		EE12C04FA099F9245DF236972536EC60 /* Expression_3@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_3@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_3@2x.png"; sourceTree = "<group>"; };
 		F14BDAEA45F8C21C23324B1D59495E5F /* Expression_44@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_44@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_44@2x.png"; sourceTree = "<group>"; };
-		F29EFB4169C79768EA188BBE44156B16 /* bingbujiandan@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bingbujiandan@3x.png"; path = "MYPEmotionKeyboard/Assets/bingbujiandan@3x.png"; sourceTree = "<group>"; };
 		F3411D270D149BB8642A361F6D74A171 /* haixiu@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "haixiu@3x.png"; path = "MYPEmotionKeyboard/Assets/haixiu@3x.png"; sourceTree = "<group>"; };
 		F44A98EEA3C81FCE50AF6D860AE19FFB /* Expression_2@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_2@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_2@2x.png"; sourceTree = "<group>"; };
 		F5F610EA9715146C49E742480DC6FD7D /* MYPEmotionView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MYPEmotionView.xib; path = MYPEmotionKeyboard/Assets/MYPEmotionView.xib; sourceTree = "<group>"; };
-		F624D855FA1DDAA3C59534D8E777B2A2 /* delete-emoji.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "delete-emoji.png"; path = "MYPEmotionKeyboard/Assets/delete-emoji.png"; sourceTree = "<group>"; };
 		F6447C29C9D82B55E9C79DE2B8D728C5 /* Pods-MYPEmotionKeyboard_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MYPEmotionKeyboard_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F75298899CA8720009A3100FBEF9A4E2 /* Expression_99@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Expression_99@2x.png"; path = "MYPEmotionKeyboard/Assets/Expression_99@2x.png"; sourceTree = "<group>"; };
 		F7FDBE296DB0C250F68BB3556B6CB900 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -509,22 +477,6 @@
 		CA04BCEBA22F07BA9C4415B7F93527C0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5868A995A5DA315431D046A1FC93EB6F /* baibai@3x.png */,
-				8214CEF6B1315208F0C02B6759A1875D /* beishang@3x.png */,
-				F29EFB4169C79768EA188BBE44156B16 /* bingbujiandan@3x.png */,
-				8298A7D2F91A6E330E7D1AEE8D71960E /* bishi@3x.png */,
-				BAD698DB066BE3DFF3AA752C32707470 /* bizui@3x.png */,
-				E15058EB335CD00975641DA7AD97B35C /* chanzui@3x.png */,
-				B2B1E50535F466BB797546A8049A24D7 /* chigua@3x.png */,
-				6284471A42E6A6153C21FE3F5F8C3A02 /* chijing@3x.png */,
-				C994643C3705E599D95C3A0280CD6874 /* dahaqi@3x.png */,
-				C9E27B9B56F375E60994CB4AC1F2C9D1 /* dalian@3x.png */,
-				F624D855FA1DDAA3C59534D8E777B2A2 /* delete-emoji.png */,
-				16E5EA19FF2AE79049CB55BC709C13ED /* delete-emoji@2x.png */,
-				2BA4FAAD93BF5F1335C25277B4F48894 /* delete-emoji@3x.png */,
-				7832C75C493743C1FE45525BE587449D /* ding@3x.png */,
-				616FFD09418B78D6222852CB3C6909AE /* dog@3x.png */,
-				0CDFA483839A692D87DF7EB3B7732C2B /* erha@3x.png */,
 				021C333331FF729F779A89D9D72E907E /* Expression_100@2x.png */,
 				561A72E32B7B261522B15488F84C2AD7 /* Expression_10@2x.png */,
 				C94EB9D1880DF0F4072875866D0FC127 /* Expression_11@2x.png */,
@@ -840,22 +792,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				236CD78FD66372DFA8DE83927ABC3C1D /* baibai@3x.png in Resources */,
-				3035ED2B58CAC291EBA59C8224EACE4A /* beishang@3x.png in Resources */,
-				CBCD28D459389E07AB2A2AE596093974 /* bingbujiandan@3x.png in Resources */,
-				D7CEC0719E5AF9C2C7FF1CD73B5B7A35 /* bishi@3x.png in Resources */,
-				3FB4C095E964D66836C32F03C19E403B /* bizui@3x.png in Resources */,
-				6C0E19E1A63EC832D8625F3896BABC41 /* chanzui@3x.png in Resources */,
-				8BFCFA9F29E50AA19E456875D2D4DD2E /* chigua@3x.png in Resources */,
-				6262EBC9FE5F99D1C6A821A5967CD33B /* chijing@3x.png in Resources */,
-				8E6C7C23A13A92856C9904E213034384 /* dahaqi@3x.png in Resources */,
-				E428363D5BB73560C2FAE473153ABB5E /* dalian@3x.png in Resources */,
-				863E7E5FC6D2B6B2BFF28A0AE4433C93 /* delete-emoji.png in Resources */,
-				A582C646E306E8314B0AADD650F5D28E /* delete-emoji@2x.png in Resources */,
-				F5C41F00D9496A49B87F757D2ED1807F /* delete-emoji@3x.png in Resources */,
-				1658D255C8E1033DDB7A7147FCFA9446 /* ding@3x.png in Resources */,
-				A77D0CEFAAE0DABAC8C7A8810BD4485C /* dog@3x.png in Resources */,
-				37879DA4FB60364E1D92C6906A1C5121 /* erha@3x.png in Resources */,
 				56429FB007C06274D88E53ED07D1ACFB /* Expression_100@2x.png in Resources */,
 				18541FB728CD6D9D11FAB4D9DB48ADE0 /* Expression_10@2x.png in Resources */,
 				95A849AFEECF224E1AE32C388197218E /* Expression_11@2x.png in Resources */,
