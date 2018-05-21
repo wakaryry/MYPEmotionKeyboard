@@ -97,6 +97,18 @@ public class MYPEmotionView: UIView {
         var page = self.emotions.count / Int(MYPEmotionSmallLineNumber * MYPEmotionSmallNumber - 1)
         page = (self.emotions.count - page * 20) >= 1 ? (page + 1) : page
         self.pageControl.numberOfPages = page
+        
+        // init menu collection view
+        let lay = UICollectionViewFlowLayout()
+        lay.scrollDirection = .horizontal
+        lay.itemSize = CGSize(width: MYPEmotionMenuWidth, height: MYPEmotionMenuHeight)
+        lay.minimumLineSpacing = 0
+        lay.minimumInteritemSpacing = 0
+        lay.sectionInset = UIEdgeInsetsMake(0, paddingLeft, 0, paddingRight)
+        self.emotionMenuCollection.collectionViewLayout = lay
+        self.emotionMenuCollection.register(UINib(nibName: "MYPEmotionCell", bundle: MYPEmotionBundle), forCellWithReuseIdentifier: "MYPEmotionCellMenuId")
+        
+        self.emotionMenuCollection.reloadData()
     }
 }
 
