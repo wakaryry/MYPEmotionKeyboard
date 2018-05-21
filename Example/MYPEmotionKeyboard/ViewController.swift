@@ -11,6 +11,7 @@ import MYPEmotionKeyboard
 
 class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var changeButton: UIButton!
     
     var emotionView: MYPEmotionView?
 
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.emotionView = MYPEmotionKeyboardView
+        self.changeButton.tag = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +33,17 @@ class ViewController: UIViewController {
         }
         else {
             sender.tag = 0
+        }
+        
+        if self.textView.isFirstResponder {
+            if sender.tag == 1 {
+                self.textView.inputView = self.emotionView
+                self.textView.reloadInputViews()
+            }
+            else {
+                self.textView.inputView = nil
+                self.textView.reloadInputViews()
+            }
         }
     }
 }

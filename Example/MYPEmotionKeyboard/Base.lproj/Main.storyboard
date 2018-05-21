@@ -56,6 +56,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="changeButton" destination="2g1-hs-2No" id="a3T-EW-IoR"/>
                         <outlet property="textView" destination="Tbo-E2-p2A" id="xNJ-dd-TRu"/>
                     </connections>
                 </viewController>

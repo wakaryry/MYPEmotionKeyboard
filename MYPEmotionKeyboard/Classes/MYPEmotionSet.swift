@@ -19,6 +19,6 @@ public class MYPEmotionSet {
     }
     
     class func defaultEmotionSet() -> MYPEmotionSet {
-        return MYPEmotionSet(cover: "Expression_1", emotions: MYPEmotion.defaultEmotions())
+        return MYPEmotionSet(cover: "Expression_1@2x", emotions: MYPEmotion.defaultEmotions())
     }
 }

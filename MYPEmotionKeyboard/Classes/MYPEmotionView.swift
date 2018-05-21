@@ -80,6 +80,12 @@ public class MYPEmotionView: UIView {
     public override func awakeFromNib() {
         self.isUserInteractionEnabled = true
         
+        self.emotionCollection.delegate = self
+        self.emotionCollection.dataSource = self
+        
+        self.emotionMenuCollection.delegate = self
+        self.emotionMenuCollection.dataSource = self
+        
         // calculate width and height
         // default small item
         let itemWidth = (UIScreen.main.bounds.width - 10 * 2) / MYPEmotionSmallNumber
@@ -123,7 +129,11 @@ public class MYPEmotionView: UIView {
 extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
         if collectionView == self.emotionCollection {
-            return self.emotions.count
+            let h = self.emotions.count % (isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber)
+            if h == 0 {
+                return self.emotions.count / (isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber)
+            }
+            return self.emotions.count / (isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber) + 1
         }
         else {
             return 1
@@ -132,7 +142,7 @@ extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.emotionCollection {
-            return self.emotions.count
+            return (isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber) + 1
         }
         else {
             return self.emotionSetsAll.count

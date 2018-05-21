@@ -27,10 +27,8 @@ public class MYPEmotionCell: UICollectionViewCell {
         }
         self.emotion = e
         self.isDelete = false
-        if let path = MYPEmotionBundle?.path(forResource: e.name, ofType: "png") {
-        
-            self.emotionImageView.image = UIImage(contentsOfFile: path)
-        }
+        let path = MYPEmotionBundle?.path(forResource: e.name, ofType: "png")
+        self.emotionImageView.image = UIImage(contentsOfFile: path!)
     }
     
     func setDeleteCellContnet() {

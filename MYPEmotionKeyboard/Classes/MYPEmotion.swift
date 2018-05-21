@@ -20,7 +20,7 @@ public class MYPEmotion {
     
     init(fromDictionary dictionary: NSDictionary){
         let imageText = dictionary["image"] as! String
-        self.name = imageText
+        self.name = imageText + "@2x"
         self.description = dictionary["text"] as! String
     }
     
