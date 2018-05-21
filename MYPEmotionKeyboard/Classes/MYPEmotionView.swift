@@ -56,10 +56,10 @@ public class MYPEmotionView: UIView {
         }
     }
     
-    fileprivate var currentSet: MYPEmotionSet = MYPEmotionSet.defaultEmotionSet() {
+    fileprivate var currentSetIndex: Int = 0 {
         didSet {
-            self.emotions = self.currentSet.emotions
-            self.isSmallItem = self.currentSet.isSmallType
+            self.emotions = self.emotionSetsAll[self.currentSetIndex].emotions
+            self.isSmallItem = self.emotionSetsAll[self.currentSetIndex].isSmallType
         }
     }
     
@@ -152,6 +152,18 @@ extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MYPEmotionCellMenuId", for: indexPath) as! MYPEmotionCell
         cell.setMenuContent(self.emotionSetsAll[indexPath.row].coverName)
         return cell
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == self.emotionMenuCollection {
+            if self.currentSetIndex == indexPath.row {
+                return
+            }
+            self.currentSetIndex = indexPath.row
+        }
+        else if collectionView == self.emotionCollection {
+            // delegate for action
+        }
     }
     
     fileprivate func emotionForIndexPath(_ indexPath: IndexPath) -> MYPEmotion? {
