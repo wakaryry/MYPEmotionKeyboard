@@ -43,3 +43,5 @@ internal let MYPEmotionBigGroupNumber: Int = Int(MYPEmotionBigNumber) * Int(MYPE
 internal let MYPEmotionMenuHeight: CGFloat = 44
 
 internal let MYPEmotionMenuWidth: CGFloat = 60
+
+public var MYPEmotionKeyboardView: MYPEmotionView = UINib(nibName: "MYPEmotionView", bundle: MYPEmotionBundle).instantiate(withOwner: nil, options: nil).first as! MYPEmotionView

@@ -28,7 +28,8 @@ Emotion keyboard. Easy to use.
   s.source_files = 'MYPEmotionKeyboard/Classes/**/*'
   
   s.resource_bundles = {
-     'MYPEmotionKeyboard' => ['MYPEmotionKeyboard/Assets/*.png', 'MYPEmotionKeyboard/Assets/*.xib']
+     'MYPEmotionKeyboard' => ['MYPEmotionKeyboard/Assets/*.png', 'MYPEmotionKeyboard/Assets/*.xib',
+'MYPEmotionKeyboard/Assets/*.plist']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

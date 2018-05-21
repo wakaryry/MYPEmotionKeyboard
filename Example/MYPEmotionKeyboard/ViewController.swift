@@ -10,12 +10,14 @@ import UIKit
 import MYPEmotionKeyboard
 
 class ViewController: UIViewController {
+    @IBOutlet weak var textView: UITextView!
     
     var emotionView: MYPEmotionView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.emotionView = MYPEmotionKeyboardView
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,5 +25,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func change(_ sender: UIButton) {
+        if sender.tag == 0 {
+            sender.tag = 1
+        }
+        else {
+            sender.tag = 0
+        }
+    }
 }
 
