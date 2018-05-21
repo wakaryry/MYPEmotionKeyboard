@@ -10,9 +10,13 @@ import Foundation
 public class MYPEmotionCell: UICollectionViewCell {
     
     @IBOutlet weak var emotionImageView: UIImageView!
+    @IBOutlet weak var imageHeightC: NSLayoutConstraint!
+    @IBOutlet weak var imageWidthC: NSLayoutConstraint!
     
     internal var isDelete: Bool = false
     var emotion: MYPEmotion? = nil
+    // if is default emotion. default: true. from outside: false
+    var isSmallType = true
     
     override public func prepareForReuse() {
         super.prepareForReuse()
@@ -20,15 +24,24 @@ public class MYPEmotionCell: UICollectionViewCell {
         self.emotion = nil
     }
     
-    func setCellContnet(_ emotion: MYPEmotion? = nil) {
+    func setCellContnet(_ emotion: MYPEmotion? = nil, isSmallType: Bool = true) {
         guard let e = emotion else {
             self.emotionImageView.image = nil
             return
         }
         self.emotion = e
         self.isDelete = false
-        let path = MYPEmotionBundle?.path(forResource: e.name, ofType: "png")
-        self.emotionImageView.image = UIImage(contentsOfFile: path!)
+        if self.isSmallType {
+            let path = MYPEmotionBundle?.path(forResource: e.name, ofType: "png")
+            self.emotionImageView.image = UIImage(contentsOfFile: path!)
+        }
+        else {
+            let path = Bundle.main.path(forResource: e.name, ofType: "png")
+            self.emotionImageView.image = UIImage(contentsOfFile: path!)
+            self.imageWidthC.constant = MYPEmotionBigHeight
+            self.imageWidthC.constant = MYPEmotionBigHeight
+        }
+        
     }
     
     func setDeleteCellContnet() {

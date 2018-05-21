@@ -17,19 +17,23 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Phm-VE-6Ae">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="169.5" y="315.5" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="B1p-Oh-kdw"/>
+                        <constraint firstAttribute="width" constant="36" id="oat-h1-GJt"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Phm-VE-6Ae" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4jr-Kq-ODH"/>
-                <constraint firstItem="Phm-VE-6Ae" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Fe9-fh-cQ1"/>
-                <constraint firstItem="Phm-VE-6Ae" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dEk-N7-VML"/>
-                <constraint firstItem="Phm-VE-6Ae" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ixK-PD-lzG"/>
+                <constraint firstItem="Phm-VE-6Ae" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="A9O-oc-NON"/>
+                <constraint firstItem="Phm-VE-6Ae" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="H3z-Bm-zpO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="emotionImageView" destination="Phm-VE-6Ae" id="Kc7-uq-2Ll"/>
+                <outlet property="imageHeightC" destination="B1p-Oh-kdw" id="qnk-Gj-J08"/>
+                <outlet property="imageWidthC" destination="oat-h1-GJt" id="3Ka-mH-7hn"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
