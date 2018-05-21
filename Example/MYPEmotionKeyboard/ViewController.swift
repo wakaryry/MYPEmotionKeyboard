@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import MYPEmotionKeyboard
 
 class ViewController: UIViewController {
+    
+    var emotionView: MYPEmotionView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
