@@ -228,3 +228,9 @@ extension MYPEmotionView: UIScrollViewDelegate {
         self.pageControl.currentPage = Int(self.emotionCollection.contentOffset.x / pageWidth)
     }
 }
+
+extension MYPEmotionView: UIInputViewAudioFeedback {
+    public var enableInputClicksWhenVisible: Bool {
+        return true
+    }
+}

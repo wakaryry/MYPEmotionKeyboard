@@ -50,14 +50,13 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: MYPEmotionInputDelegate {
-    func emotionView(_ emotionView: MYPEmotionView, didClickEmotion emotion: MYPEmotion) {
-        
+    func emotionView(_ emotionView: MYPEmotionView, didClickEmotion emotion: MYPEmotion, isDefault: Bool) {
+        print(emotion.description)
     }
     
     func emotionViewdidClickDelete(_ emotionView: MYPEmotionView) {
-        
+        print("Delete")
     }
-    
     
 }
 
