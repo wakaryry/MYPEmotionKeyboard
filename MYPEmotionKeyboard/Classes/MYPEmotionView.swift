@@ -204,6 +204,11 @@ extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
         
         return nil
     }
-    
-    
+}
+
+extension MYPEmotionView: UIScrollViewDelegate {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let pageWidth = self.emotionCollection.frame.width
+        self.pageControl.currentPage = Int(self.emotionCollection.contentOffset.x / pageWidth)
+    }
 }
