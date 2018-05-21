@@ -56,6 +56,13 @@ public class MYPEmotionView: UIView {
         }
     }
     
+    fileprivate var currentSet: MYPEmotionSet = MYPEmotionSet.defaultEmotionSet() {
+        didSet {
+            self.emotions = self.currentSet.emotions
+            self.isSmallItem = self.currentSet.isSmallType
+        }
+    }
+    
     /** all the emotionSets including outside configured*/
     fileprivate var emotionSetsAll = [MYPEmotionSet.defaultEmotionSet()]
     fileprivate var emotions = MYPEmotion.defaultEmotions()
@@ -132,7 +139,39 @@ extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: <#T##String#>, for: <#T##IndexPath#>)
+        if collectionView == self.emotionCollection {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MYPEmotionCellId", for: indexPath) as! MYPEmotionCell
+            if indexPath.row == (isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber) {
+                cell.setDeleteCellContnet()
+            }
+            else {
+                cell.setCellContnet(self.emotionForIndexPath(indexPath))
+            }
+            return cell
+        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MYPEmotionCellMenuId", for: indexPath) as! MYPEmotionCell
+        cell.setMenuContent(self.emotionSetsAll[indexPath.row].coverName)
+        return cell
+    }
+    
+    fileprivate func emotionForIndexPath(_ indexPath: IndexPath) -> MYPEmotion? {
+        let page = indexPath.section
+        var index = page * (self.isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber) + indexPath.row
+        
+        // new page
+        let ip = index / (self.isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber)
+        // new index
+        let ii = index % (self.isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber)
+        // index in data
+        let reIndex = (ii % Int(self.isSmallItem ? MYPEmotionSmallLineNumber : MYPEmotionBigLineNumber)) * Int(self.isSmallItem ? MYPEmotionSmallNumber : MYPEmotionBigNumber) + (ii / 3)
+        
+        index = reIndex + ip * (self.isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber)
+        
+        if index < self.emotions.count {
+            return self.emotions[index]
+        }
+        
+        return nil
     }
     
     

@@ -39,6 +39,11 @@ public class MYPEmotionCell: UICollectionViewCell {
         self.emotionImageView.image = UIImage(contentsOfFile: (MYPEmotionBundle?.path(forResource: "delete-emoji", ofType: "png"))!)
     }
     
+    func setMenuContent(_ name: String) {
+        let path = MYPEmotionBundle?.path(forResource: name, ofType: "png")
+        self.emotionImageView.image = UIImage(contentsOfFile: path!)
+    }
+    
     override public func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

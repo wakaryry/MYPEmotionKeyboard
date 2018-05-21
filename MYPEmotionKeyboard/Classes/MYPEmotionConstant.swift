@@ -36,6 +36,10 @@ internal let MYPEmotionSmallLineNumber: CGFloat = 3
 
 internal let MYPEmotionBigLineNumber: CGFloat = 2
 
+internal let MYPEmotionSmallGroupNumber: Int = Int(MYPEmotionSmallNumber) * Int(MYPEmotionSmallLineNumber) - 1
+
+internal let MYPEmotionBigGroupNumber: Int = Int(MYPEmotionBigNumber) * Int(MYPEmotionBigLineNumber) - 1
+
 internal let MYPEmotionMenuHeight: CGFloat = 44
 
 internal let MYPEmotionMenuWidth: CGFloat = 60
