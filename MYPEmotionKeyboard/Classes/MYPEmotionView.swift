@@ -12,7 +12,7 @@ public class MYPEmotionView: UIView {
     @IBOutlet weak var emotionCollection: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var emotionMenuCollection: UICollectionView!
-    var delegate: MYPEmotionInputDelegate?
+    public var delegate: MYPEmotionInputDelegate?
     
     /** user could set outside emotions*/
     public var emotionSets = [MYPEmotionSet]() {
@@ -194,7 +194,7 @@ extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
                 self.delegate?.emotionViewdidClickDelete(self)
             }
             else {
-                self.delegate?.emotionView(self, didClickEmotion: self.emotionForIndexPath(indexPath)!)
+                self.delegate?.emotionView(self, didClickEmotion: self.emotionForIndexPath(indexPath)!, isDefault: self.isSmallItem)
             }
         }
         

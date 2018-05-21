@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.emotionView = MYPEmotionKeyboardView
+        self.emotionView?.delegate = self
         self.changeButton.tag = 0
     }
 
@@ -46,5 +47,17 @@ class ViewController: UIViewController {
             }
         }
     }
+}
+
+extension ViewController: MYPEmotionInputDelegate {
+    func emotionView(_ emotionView: MYPEmotionView, didClickEmotion emotion: MYPEmotion) {
+        
+    }
+    
+    func emotionViewdidClickDelete(_ emotionView: MYPEmotionView) {
+        
+    }
+    
+    
 }
 

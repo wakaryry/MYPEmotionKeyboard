@@ -10,15 +10,18 @@ import Foundation
 public class MYPEmotionSet {
     public var coverName: String
     public var emotions: [MYPEmotion]
-    public var isSmallType: Bool
+    // isSmallType == system default emotions, true
+    public var isSmallType: Bool = true
     
-    init(cover: String, emotions: [MYPEmotion], isSmall: Bool = true) {
+    init(cover: String, emotions: [MYPEmotion]) {
         self.coverName = cover
         self.emotions = emotions
-        self.isSmallType = isSmall
+        self.isSmallType = false
     }
     
     class func defaultEmotionSet() -> MYPEmotionSet {
-        return MYPEmotionSet(cover: "Expression_1@2x", emotions: MYPEmotion.defaultEmotions())
+        let e = MYPEmotionSet(cover: "Expression_1@2x", emotions: MYPEmotion.defaultEmotions())
+        e.isSmallType = true
+        return e
     }
 }

@@ -8,6 +8,6 @@
 import Foundation
 
 public protocol MYPEmotionInputDelegate {
-    func emotionView(_ emotionView: MYPEmotionView, didClickEmotion emotion: MYPEmotion)
+    func emotionView(_ emotionView: MYPEmotionView, didClickEmotion emotion: MYPEmotion, isDefault: Bool)
     func emotionViewdidClickDelete(_ emotionView: MYPEmotionView)
 }
