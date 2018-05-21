@@ -123,6 +123,8 @@ public class MYPEmotionView: UIView {
         self.emotionMenuCollection.register(UINib(nibName: "MYPEmotionCell", bundle: MYPEmotionBundle), forCellWithReuseIdentifier: "MYPEmotionCellMenuId")
         
         self.emotionMenuCollection.reloadData()
+        self.emotionMenuCollection.allowsMultipleSelection = false
+        self.emotionMenuCollection.selectItem(at: IndexPath(item: 0, section: 0), animated: false, scrollPosition: UICollectionViewScrollPosition.left)
     }
 }
 
@@ -152,6 +154,12 @@ extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == self.emotionCollection {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MYPEmotionCellId", for: indexPath) as! MYPEmotionCell
+            // set selected style
+            let v = UIView(frame: cell.frame)
+            v.layer.cornerRadius = 5
+            cell.selectedBackgroundView = v
+            cell.selectedBackgroundView?.backgroundColor = UIColor.lightGray
+            
             if indexPath.row == (isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber) {
                 cell.setDeleteCellContnet()
             }
@@ -162,6 +170,12 @@ extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
         }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MYPEmotionCellMenuId", for: indexPath) as! MYPEmotionCell
         cell.setMenuContent(self.emotionSetsAll[indexPath.row].coverName)
+        // set selected style
+        let v = UIView(frame: cell.frame)
+        v.layer.cornerRadius = 5
+        cell.selectedBackgroundView = v
+        cell.selectedBackgroundView?.backgroundColor = UIColor.lightGray
+        
         return cell
     }
     
@@ -183,6 +197,8 @@ extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
                 self.delegate?.emotionView(self, didClickEmotion: self.emotionForIndexPath(indexPath)!)
             }
         }
+        
+        collectionView.deselectItem(at: indexPath, animated: true)
     }
     
     fileprivate func emotionForIndexPath(_ indexPath: IndexPath) -> MYPEmotion? {
