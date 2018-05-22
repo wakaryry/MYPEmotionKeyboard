@@ -51,7 +51,35 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        self.refreshTextUI()
+        self.textView.scrollRangeToVisible(self.textView.selectedRange)
+    }
     
+    private func refreshTextUI() {
+        if self.textView.text.isEmpty {
+            return
+        }
+        
+        let markedTextRange = self.textView.markedTextRange
+        if let m = markedTextRange {
+            let position = self.textView.position(from: m.start, offset: 0)
+            
+            if position != nil {
+                return
+            }
+            
+            let selectedRange = self.textView.selectedRange
+            
+            let attributedComment = NSMutableAttributedString(string: self.textView.attributedText.plainText(), attributes: [NSAttributedStringKey.font : self.textView.font!, .foregroundColor: UIColor.black])
+            
+            attributedComment.translateAttributedTextIntoEmotionText(with: self.textView.font)
+            
+            let offset = self.textView.attributedText.length - attributedComment.length
+            self.textView.attributedText = attributedComment
+            self.textView.selectedRange = NSMakeRange(selectedRange.location - offset, 0)
+        }
+    }
 }
 
 extension ViewController: MYPEmotionInputDelegate {
@@ -59,11 +87,37 @@ extension ViewController: MYPEmotionInputDelegate {
         let selectedRange = self.textView.selectedRange
         let emotionString = emotion.description
         let emotionAttributedString = NSMutableAttributedString(string: emotionString)
-        //emotionAttributedString
+        emotionAttributedString.myp_setTextBackedString(emotionString, range: emotionAttributedString.myp_rangeOfAll())
+        
+        let attributedText = NSMutableAttributedString(attributedString: self.textView.attributedText)
+        attributedText.replaceCharacters(in: selectedRange, with: emotionAttributedString)
+        self.textView.attributedText = attributedText
+        self.textView.selectedRange = NSMakeRange(selectedRange.location + emotionAttributedString.length, 0)
+        
+        self.textViewDidChange(self.textView)
     }
     
     func emotionViewdidClickDelete(_ emotionView: MYPEmotionView) {
-        print("Delete")
+        let selectedRange = self.textView.selectedRange
+        
+        if selectedRange.location == 0 && selectedRange.length == 0 {
+            return
+        }
+        
+        let attributedText = NSMutableAttributedString(attributedString: self.textView.attributedText)
+        
+        if selectedRange.length > 0 {
+            attributedText.deleteCharacters(in: selectedRange)
+            self.textView.attributedText = attributedText
+            self.textView.selectedRange = NSMakeRange(selectedRange.location, 0)
+        }
+        else {
+            attributedText.deleteCharacters(in: NSMakeRange(selectedRange.location - 1, 1))
+            self.textView.attributedText = attributedText
+            self.textView.selectedRange = NSMakeRange(selectedRange.location - 1, 0)
+        }
+        
+        self.textViewDidChange(self.textView)
     }
     
 }

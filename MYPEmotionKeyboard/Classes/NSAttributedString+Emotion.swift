@@ -130,4 +130,8 @@ public extension NSAttributedString {
     public func plainText() -> String {
         return self.myp_plainText(in: NSMakeRange(0, self.length)) ?? ""
     }
+    
+    public func myp_rangeOfAll() -> NSRange {
+        return NSMakeRange(0, self.length)
+    }
 }
