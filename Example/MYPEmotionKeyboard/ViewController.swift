@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         self.emotionView = MYPEmotionKeyboardView
         self.emotionView?.delegate = self
         self.changeButton.tag = 0
+        self.textView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,9 +50,16 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UITextViewDelegate {
+    
+}
+
 extension ViewController: MYPEmotionInputDelegate {
     func emotionView(_ emotionView: MYPEmotionView, didClickEmotion emotion: MYPEmotion, isDefault: Bool) {
-        print(emotion.description)
+        let selectedRange = self.textView.selectedRange
+        let emotionString = emotion.description
+        let emotionAttributedString = NSMutableAttributedString(string: emotionString)
+        //emotionAttributedString
     }
     
     func emotionViewdidClickDelete(_ emotionView: MYPEmotionView) {

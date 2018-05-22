@@ -19,7 +19,7 @@ internal class MYPEmotionMatchingResult {
     }
 }
 
-extension NSMutableAttributedString {
+public extension NSMutableAttributedString {
     /** 匹配给定attributedString中的所有emoji，如果匹配到的emoji有本地图片的话会直接换成本地的图片*/
     public func translateAttributedTextIntoEmotionText(with font: UIFont?) {
         if self.length == 0 || font == nil {
@@ -91,7 +91,7 @@ extension NSMutableAttributedString {
     }
 }
 
-extension NSMutableAttributedString {
+public extension NSMutableAttributedString {
     public func myp_setTextBackedString(_ string: String?, range: NSRange) {
         if string != nil && !string!.isEmpty {
             self.addAttribute(NSAttributedStringKey.MYPEmotionKey.MYPTextBackedStringAttributeName, value: string!, range: range)
@@ -102,7 +102,7 @@ extension NSMutableAttributedString {
     }
 }
 
-extension NSAttributedString {
+public extension NSAttributedString {
     public func myp_plainText(in range: NSRange) -> String? {
         if range.location == NSNotFound || range.length == NSNotFound {
             return nil
