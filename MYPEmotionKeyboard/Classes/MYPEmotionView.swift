@@ -9,10 +9,10 @@ import Foundation
 
 public class MYPEmotionView: UIView {
     
-    @IBOutlet weak var emotionCollection: UICollectionView!
+    @IBOutlet weak var emotionCollection: MYPEmotionCollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var emotionMenuCollection: UICollectionView!
-    public var delegate: MYPEmotionInputDelegate?
+    public weak var delegate: MYPEmotionInputDelegate?
     
     /** user could set outside emotions*/
     public var emotionSets = [MYPEmotionSet]() {
@@ -125,6 +125,8 @@ public class MYPEmotionView: UIView {
         self.emotionMenuCollection.reloadData()
         self.emotionMenuCollection.allowsMultipleSelection = false
         self.emotionMenuCollection.selectItem(at: IndexPath(item: 0, section: 0), animated: false, scrollPosition: UICollectionViewScrollPosition.left)
+        
+        self.emotionCollection.emotionCollectionDelegate = self
     }
 }
 
@@ -232,5 +234,12 @@ extension MYPEmotionView: UIScrollViewDelegate {
 extension MYPEmotionView: UIInputViewAudioFeedback {
     public var enableInputClicksWhenVisible: Bool {
         return true
+    }
+}
+
+extension MYPEmotionView: MYPEmotionCollectionDelegate {
+    func emotionCollectionViewDidClickDelete() {
+        UIDevice.current.playInputClick()
+        self.delegate?.emotionViewdidClickDelete(self)
     }
 }

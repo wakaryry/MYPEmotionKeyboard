@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8F3F4B8BF74AEE0431C6EAB2 /* Pods_MYPEmotionKeyboard_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A706382621C2F5F69D777F /* Pods_MYPEmotionKeyboard_Tests.framework */; };
+		E9B3F28D20B42D300029C45C /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3F28C20B42D300029C45C /* TextView.swift */; };
 		EB9526E660A2E9650B5930A0 /* Pods_MYPEmotionKeyboard_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9B07B9CF870803A2520ABC /* Pods_MYPEmotionKeyboard_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		A1A706382621C2F5F69D777F /* Pods_MYPEmotionKeyboard_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYPEmotionKeyboard_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EBEFF3BBFCDC1960B62B9F /* Pods-MYPEmotionKeyboard_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYPEmotionKeyboard_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYPEmotionKeyboard_Example/Pods-MYPEmotionKeyboard_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E3C19C1C2DABADAD2A13DCE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E9B3F28C20B42D300029C45C /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				E9B3F28C20B42D300029C45C /* TextView.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -324,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9B3F28D20B42D300029C45C /* TextView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

@@ -7,7 +7,11 @@
 
 import Foundation
 
-public protocol MYPEmotionInputDelegate {
+public protocol MYPEmotionInputDelegate: class {
     func emotionView(_ emotionView: MYPEmotionView, didClickEmotion emotion: MYPEmotion, isDefault: Bool)
     func emotionViewdidClickDelete(_ emotionView: MYPEmotionView)
+}
+
+internal protocol MYPEmotionCollectionDelegate: class {
+    func emotionCollectionViewDidClickDelete()
 }
