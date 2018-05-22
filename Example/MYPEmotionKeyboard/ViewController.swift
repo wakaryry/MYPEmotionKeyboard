@@ -26,6 +26,10 @@ class ViewController: UIViewController {
         self.textView.delegate = self
         self.textView.font = UIFont.systemFont(ofSize: 18)
         self.font = self.textView.font
+        
+        if #available(iOS 11.0, *) {
+            self.textView.textDragInteraction?.isEnabled = false
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,6 +66,8 @@ extension ViewController: UITextViewDelegate {
     
     private func refreshTextUI() {
         if self.textView.text.isEmpty {
+            // since the font may not correct when empty
+            self.textView.font = self.font
             return
         }
         
@@ -76,10 +82,6 @@ extension ViewController: UITextViewDelegate {
         }
         
         let selectedRange = self.textView.selectedRange
-        
-        print("Refresh: \(self.textView.attributedText)")
-        
-        print("Refresh plain: \(self.textView.attributedText.plainText())")
         
         let attributedComment = NSMutableAttributedString(string: self.textView.attributedText.plainText(), attributes: [NSAttributedStringKey.font : self.font!, .foregroundColor: UIColor.black])
         
@@ -97,12 +99,12 @@ extension ViewController: MYPEmotionInputDelegate {
         let selectedRange = self.textView.selectedRange
         let emotionString = emotion.description
         let emotionAttributedString = NSMutableAttributedString(string: emotionString)
-        emotionAttributedString.myp_setTextBackedString(emotionString, range: emotionAttributedString.myp_rangeOfAll())
+        emotionAttributedString.myp_setTextBackedString(MYPTextBackedString(string: emotionString), range: emotionAttributedString.myp_rangeOfAll())
         
         let attributedText = NSMutableAttributedString(attributedString: self.textView.attributedText)
-        print("Clicked replace before: \(attributedText)")
+        
         attributedText.replaceCharacters(in: selectedRange, with: emotionAttributedString)
-        print("Clicked replace after: \(attributedText)")
+        
         self.textView.attributedText = attributedText
         self.textView.selectedRange = NSMakeRange(selectedRange.location + emotionAttributedString.length, 0)
         
