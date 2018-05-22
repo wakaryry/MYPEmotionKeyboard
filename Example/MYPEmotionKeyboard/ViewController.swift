@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var changeButton: UIButton!
     
     var emotionView: MYPEmotionView?
+    
+    var font: UIFont?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,7 @@ class ViewController: UIViewController {
         self.changeButton.tag = 0
         self.textView.delegate = self
         self.textView.font = UIFont.systemFont(ofSize: 18)
+        self.font = self.textView.font
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,9 +77,9 @@ extension ViewController: UITextViewDelegate {
         
         let selectedRange = self.textView.selectedRange
         
-        let attributedComment = NSMutableAttributedString(string: self.textView.attributedText.plainText(), attributes: [NSAttributedStringKey.font : self.textView.font!, .foregroundColor: UIColor.black])
+        let attributedComment = NSMutableAttributedString(string: self.textView.attributedText.plainText(), attributes: [NSAttributedStringKey.font : self.font!, .foregroundColor: UIColor.black])
         
-        attributedComment.translateAttributedTextIntoEmotionText(with: self.textView.font)
+        attributedComment.translateAttributedTextIntoEmotionText(with: self.font)
         
         let offset = self.textView.attributedText.length - attributedComment.length
         self.textView.attributedText = attributedComment
@@ -85,6 +88,7 @@ extension ViewController: UITextViewDelegate {
 }
 
 extension ViewController: MYPEmotionInputDelegate {
+    
     func emotionView(_ emotionView: MYPEmotionView, didClickEmotion emotion: MYPEmotion, isDefault: Bool) {
         let selectedRange = self.textView.selectedRange
         let emotionString = emotion.description

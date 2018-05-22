@@ -25,11 +25,11 @@ public extension NSMutableAttributedString {
         if self.length == 0 || font == nil {
             return
         }
-        print("Translate")
+        
         let results = self.matchingEmotion(in: self.string)
         
         if results != nil && (results?.count ?? 0) > 0 {
-            print("Matched")
+            
             var offset = 0
             for result in results! {
                 if let image = result.emojiImage {
