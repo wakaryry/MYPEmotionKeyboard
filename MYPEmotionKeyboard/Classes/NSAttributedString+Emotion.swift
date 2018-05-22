@@ -47,7 +47,6 @@ public extension NSMutableAttributedString {
                     self.replaceCharacters(in: actualRange, with: emotionAttributedString)
                     
                     offset += result.description.distance(from: result.description.startIndex, to: result.description.endIndex) - emotionAttributedString.length
-                    print(self)
                 }
             }
         }
@@ -116,6 +115,7 @@ public extension NSAttributedString {
         
         let string = self.string
         self.enumerateAttribute(NSAttributedStringKey.MYPEmotionKey.MYPTextBackedStringAttributeName, in: range, options: []) { (value, aRange, stop) in
+            print("To Plain: \(value)")
             let backed = value as! String?
             if backed != nil {
                 result.append(backed!)

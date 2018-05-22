@@ -77,6 +77,10 @@ extension ViewController: UITextViewDelegate {
         
         let selectedRange = self.textView.selectedRange
         
+        print("Refresh: \(self.textView.attributedText)")
+        
+        print("Refresh plain: \(self.textView.attributedText.plainText())")
+        
         let attributedComment = NSMutableAttributedString(string: self.textView.attributedText.plainText(), attributes: [NSAttributedStringKey.font : self.font!, .foregroundColor: UIColor.black])
         
         attributedComment.translateAttributedTextIntoEmotionText(with: self.font)
@@ -96,7 +100,9 @@ extension ViewController: MYPEmotionInputDelegate {
         emotionAttributedString.myp_setTextBackedString(emotionString, range: emotionAttributedString.myp_rangeOfAll())
         
         let attributedText = NSMutableAttributedString(attributedString: self.textView.attributedText)
+        print("Clicked replace before: \(attributedText)")
         attributedText.replaceCharacters(in: selectedRange, with: emotionAttributedString)
+        print("Clicked replace after: \(attributedText)")
         self.textView.attributedText = attributedText
         self.textView.selectedRange = NSMakeRange(selectedRange.location + emotionAttributedString.length, 0)
         
