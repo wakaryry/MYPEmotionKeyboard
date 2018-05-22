@@ -19,7 +19,7 @@ internal class MYPEmotionMatchingResult {
     }
 }
 
-extension NSAttributedString {
+extension NSMutableAttributedString {
     /** 匹配给定attributedString中的所有emoji，如果匹配到的emoji有本地图片的话会直接换成本地的图片*/
     public func translateAttributedTextIntoEmotionText(with font: UIFont?) {
         if self.length == 0 || font == nil {
@@ -38,7 +38,14 @@ extension NSAttributedString {
                     attachment.image = image
                     attachment.bounds = CGRect(x: 0, y: font!.descender, width: emotionHeight, height: emotionHeight)
                     
-                    var emotionAttributedString = NSMutableAttributedString(attributedString: NSAttributedString(attachment: attachment))
+                    let emotionAttributedString = NSMutableAttributedString(attributedString: NSAttributedString(attachment: attachment))
+                    emotionAttributedString.myp_setTextBackedString(result.description, range: NSMakeRange(0, emotionAttributedString.length))
+                    
+                    let actualRange = NSMakeRange(result.range.location - offset, result.description.distance(from: result.description.startIndex, to: result.description.endIndex))
+                    
+                    self.replaceCharacters(in: actualRange, with: emotionAttributedString)
+                    
+                    offset += result.description.distance(from: result.description.startIndex, to: result.description.endIndex) - emotionAttributedString.length
                 }
             }
         }
@@ -85,7 +92,42 @@ extension NSAttributedString {
 }
 
 extension NSMutableAttributedString {
-    public func myp_setTextBackedString(_ string: String, range: NSRange) {
+    public func myp_setTextBackedString(_ string: String?, range: NSRange) {
+        if string != nil && !string!.isEmpty {
+            self.addAttribute(NSAttributedStringKey.MYPEmotionKey.MYPTextBackedStringAttributeName, value: string!, range: range)
+        }
+        else {
+            self.removeAttribute(NSAttributedStringKey.MYPEmotionKey.MYPTextBackedStringAttributeName, range: range)
+        }
+    }
+}
+
+extension NSAttributedString {
+    public func myp_plainText(in range: NSRange) -> String? {
+        if range.location == NSNotFound || range.length == NSNotFound {
+            return nil
+        }
+        var result = String()
+        if range.length == 0 {
+            return result
+        }
         
+        let string = self.string
+        self.enumerateAttribute(NSAttributedStringKey.MYPEmotionKey.MYPTextBackedStringAttributeName, in: range, options: []) { (value, aRange, stop) in
+            let backed = value as! String?
+            if backed != nil {
+                result.append(backed!)
+            }
+            else {
+                let startIndex = string.index(string.startIndex, offsetBy: aRange.location)
+                let endIndex = string.index(string.startIndex, offsetBy: aRange.location + aRange.length)
+                result.append(String(string[startIndex...endIndex]))
+            }
+        }
+        return result
+    }
+    
+    public func plainText() -> String {
+        return self.myp_plainText(in: NSMakeRange(0, self.length)) ?? ""
     }
 }

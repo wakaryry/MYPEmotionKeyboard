@@ -7,6 +7,12 @@
 
 import Foundation
 
+extension NSAttributedStringKey {
+    struct MYPEmotionKey {
+        static let MYPTextBackedStringAttributeName = NSAttributedStringKey("MYPTextBackedString")
+    }
+}
+
 internal var MYPEmotionBundle: Bundle? {
     let bundlePath = Bundle(for: MYPEmotion.self).path(forResource: "MYPEmotionKeyboard", ofType: "bundle")
     
