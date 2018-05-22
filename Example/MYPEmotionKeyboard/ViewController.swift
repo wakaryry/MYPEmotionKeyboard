@@ -10,7 +10,7 @@ import UIKit
 import MYPEmotionKeyboard
 
 class ViewController: UIViewController {
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textView: TextView!
     @IBOutlet weak var changeButton: UIButton!
     
     var emotionView: MYPEmotionView?
