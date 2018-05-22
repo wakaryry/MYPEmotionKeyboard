@@ -25,10 +25,11 @@ public extension NSMutableAttributedString {
         if self.length == 0 || font == nil {
             return
         }
-        
+        print("Translate")
         let results = self.matchingEmotion(in: self.string)
         
         if results != nil && (results?.count ?? 0) > 0 {
+            print("Matched")
             var offset = 0
             for result in results! {
                 if let image = result.emojiImage {
@@ -46,6 +47,7 @@ public extension NSMutableAttributedString {
                     self.replaceCharacters(in: actualRange, with: emotionAttributedString)
                     
                     offset += result.description.distance(from: result.description.startIndex, to: result.description.endIndex) - emotionAttributedString.length
+                    print(self)
                 }
             }
         }
@@ -66,12 +68,12 @@ public extension NSMutableAttributedString {
                 
                 let startIndex = string.index(string.startIndex, offsetBy: result.range.location)
                 let endIndex = string.index(string.startIndex, offsetBy: result.range.location + result.range.length)
-                let description = String(string[startIndex...endIndex])
+                let description = String(string[startIndex..<endIndex])
                 
                 let emotion = self.emotion(with: description)
                 if let e = emotion {
                     let range = result.range
-                    let image = UIImage(named: e.name, in: MYPEmotionBundle, compatibleWith: nil)
+                    let image = UIImage(named: e.name, in: MYPEmotionBundle, compatibleWith: nil)!
                     let emotionMatchingResult = MYPEmotionMatchingResult(range: range, image: image, description: description)
                     emotionMatchingResults.append(emotionMatchingResult)
                 }
@@ -121,7 +123,7 @@ public extension NSAttributedString {
             else {
                 let startIndex = string.index(string.startIndex, offsetBy: aRange.location)
                 let endIndex = string.index(string.startIndex, offsetBy: aRange.location + aRange.length)
-                result.append(String(string[startIndex...endIndex]))
+                result.append(String(string[startIndex..<endIndex]))
             }
         }
         return result

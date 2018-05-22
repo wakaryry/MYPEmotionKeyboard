@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         self.emotionView?.delegate = self
         self.changeButton.tag = 0
         self.textView.delegate = self
+        self.textView.font = UIFont.systemFont(ofSize: 18)
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,23 +63,24 @@ extension ViewController: UITextViewDelegate {
         }
         
         let markedTextRange = self.textView.markedTextRange
+        
         if let m = markedTextRange {
             let position = self.textView.position(from: m.start, offset: 0)
             
             if position != nil {
                 return
             }
-            
-            let selectedRange = self.textView.selectedRange
-            
-            let attributedComment = NSMutableAttributedString(string: self.textView.attributedText.plainText(), attributes: [NSAttributedStringKey.font : self.textView.font!, .foregroundColor: UIColor.black])
-            
-            attributedComment.translateAttributedTextIntoEmotionText(with: self.textView.font)
-            
-            let offset = self.textView.attributedText.length - attributedComment.length
-            self.textView.attributedText = attributedComment
-            self.textView.selectedRange = NSMakeRange(selectedRange.location - offset, 0)
         }
+        
+        let selectedRange = self.textView.selectedRange
+        
+        let attributedComment = NSMutableAttributedString(string: self.textView.attributedText.plainText(), attributes: [NSAttributedStringKey.font : self.textView.font!, .foregroundColor: UIColor.black])
+        
+        attributedComment.translateAttributedTextIntoEmotionText(with: self.textView.font)
+        
+        let offset = self.textView.attributedText.length - attributedComment.length
+        self.textView.attributedText = attributedComment
+        self.textView.selectedRange = NSMakeRange(selectedRange.location - offset, 0)
     }
 }
 
