@@ -12,6 +12,7 @@
 - example for cut\paste\copy
 - text and emotion keyboard
 - default small emotions for text
+- attributed and plain string output
 
 ## Example
 
