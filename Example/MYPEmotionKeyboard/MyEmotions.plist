@@ -183,5 +183,35 @@
             <key>image</key>
             <string>miao</string>
         </dict>
+        <dict>
+            <key>text</key>
+            <string>[emo-angry]</string>
+            <key>image</key>
+            <string>emo-angry</string>
+        </dict>
+        <dict>
+            <key>text</key>
+            <string>[emo-beer]</string>
+            <key>image</key>
+            <string>emo-beer</string>
+        </dict>
+        <dict>
+            <key>text</key>
+            <string>[emo-coffee]</string>
+            <key>image</key>
+            <string>emo-coffee</string>
+        </dict>
+        <dict>
+            <key>text</key>
+            <string>[emo-cry]</string>
+            <key>image</key>
+            <string>emo-cry</string>
+        </dict>
+        <dict>
+            <key>text</key>
+            <string>[emo-devil]</string>
+            <key>image</key>
+            <string>emo-devil</string>
+        </dict>
     </array>
 </plist>

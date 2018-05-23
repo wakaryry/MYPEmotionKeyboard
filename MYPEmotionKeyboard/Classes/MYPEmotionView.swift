@@ -135,7 +135,8 @@ public class MYPEmotionView: UIView {
         self.emotionMenuCollection.reloadData()
         
         //self.emotionMenuCollection.selectItem(at: IndexPath(item: 0, section: 0), animated: false, scrollPosition: UICollectionViewScrollPosition.left)
-        self.emotionMenuCollection.cellForItem(at: IndexPath(item: 0, section: 0))?.isSelected = true
+        //self.emotionMenuCollection.cellForItem(at: IndexPath(item: 0, section: 0))?.isSelected = true
+        //self.collectionView(self.emotionMenuCollection, didSelectItemAt: IndexPath(item: 0, section: 0))
         
         self.emotionCollection.emotionCollectionDelegate = self
     }
