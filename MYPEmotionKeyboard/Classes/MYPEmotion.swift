@@ -13,14 +13,14 @@ public class MYPEmotion {
     /** text*/
     public var description: String
     
-    init(name: String, description: String) {
+    public init(name: String, description: String) {
         self.name = name
         self.description = description
     }
     
-    init(fromDictionary dictionary: NSDictionary){
+    public init(fromDictionary dictionary: NSDictionary){
         let imageText = dictionary["image"] as! String
-        self.name = imageText + "@2x"
+        self.name = imageText
         self.description = dictionary["text"] as! String
     }
     
@@ -29,7 +29,10 @@ public class MYPEmotion {
         let emotionData = NSArray(contentsOfFile: (MYPEmotionBundle?.path(forResource: "Expression", ofType: "plist")!)!)!
         
         for item in emotionData {
-            let emotion = MYPEmotion(fromDictionary: item as! NSDictionary)
+            let d = item as! NSDictionary
+            let imageText = (d["image"] as! String) + "@2x"
+            let desc = d["text"] as! String
+            let emotion = MYPEmotion(name: imageText, description: desc)
             emotions.append(emotion)
         }
         return emotions

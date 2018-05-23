@@ -13,7 +13,7 @@ public class MYPEmotionSet {
     // isSmallType == system default emotions, true
     public var isSmallType: Bool = true
     
-    init(cover: String, emotions: [MYPEmotion]) {
+    public init(cover: String, emotions: [MYPEmotion]) {
         self.coverName = cover
         self.emotions = emotions
         self.isSmallType = false

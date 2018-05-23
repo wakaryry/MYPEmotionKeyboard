@@ -30,6 +30,24 @@ class ViewController: UIViewController {
         if #available(iOS 11.0, *) {
             self.textView.textDragInteraction?.isEnabled = false
         }
+        
+        self.addMyOwnEmotions()
+    }
+    
+    private func addMyOwnEmotions() {
+        var emotions: [MYPEmotion] = [MYPEmotion]()
+        let array = NSArray(contentsOfFile: Bundle.main.path(forResource: "MyEmotions", ofType: "plist")!)
+        if let a = array {
+            for e in a {
+                emotions.append(MYPEmotion(fromDictionary: e as! NSDictionary))
+            }
+        }
+        
+        if !emotions.isEmpty {
+            let s = MYPEmotionSet(cover: "dog", emotions: emotions)
+            // here we use set, not append
+            self.emotionView?.emotionSets = [s]
+        }
     }
 
     override func didReceiveMemoryWarning() {
