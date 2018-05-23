@@ -21,12 +21,16 @@ public class MYPEmotionView: UIView {
             for s in self.emotionSets {
                 self.emotionSetsAll.append(s)
             }
+            self.emotionMenuCollection.reloadData()
         }
     }
     
     /** when we change emotionSet, we must change the isSmallItem. This will update the emotion view*/
     fileprivate var isSmallItem = true {
         didSet {
+            if self.isSmallItem == oldValue {
+                return
+            }
             let number = self.isSmallItem ? MYPEmotionSmallNumber : MYPEmotionBigNumber
             let height = self.isSmallItem ? MYPEmotionSmallHeight : MYPEmotionBigHeight
             
@@ -37,7 +41,7 @@ public class MYPEmotionView: UIView {
             let paddingRight = UIScreen.main.bounds.width - paddingLeft - itemWidth * number
             
             // init FlowLayout
-            let layout = UICollectionViewFlowLayout()
+            let layout = self.emotionCollection.collectionViewLayout as! UICollectionViewFlowLayout  //UICollectionViewFlowLayout()
             layout.scrollDirection = .horizontal
             layout.itemSize = CGSize(width: itemWidth, height: height)
             layout.minimumLineSpacing = 0
@@ -45,15 +49,20 @@ public class MYPEmotionView: UIView {
             layout.sectionInset = UIEdgeInsetsMake(0, paddingLeft, 0, paddingRight)
             
             // init emotion collection view
-            self.emotionCollection.collectionViewLayout = layout
+            // it will throw: `Thread 1: EXC_BAD_ACCESS`
+            //self.emotionCollection.collectionViewLayout = layout
             
             self.emotionCollection.reloadData()
             
-            let numbers = self.isSmallItem ? Int(MYPEmotionSmallLineNumber * MYPEmotionSmallNumber - 1) : Int(MYPEmotionBigLineNumber * MYPEmotionBigNumber - 1)
+            let numbers = self.isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber
             
             var page = self.emotions.count / numbers
-            page = (self.emotions.count - page * 20) >= 1 ? (page + 1) : page
+            page = (self.emotions.count - page * numbers) >= 1 ? (page + 1) : page
             self.pageControl.numberOfPages = page
+            
+            // we could position the collection scroll's offset
+            self.emotionCollection.scrollToItem(at: IndexPath(item: 0, section: 0), at: UICollectionViewScrollPosition.left, animated: false)
+            self.pageControl.currentPage = 0
         }
     }
     
@@ -108,8 +117,8 @@ public class MYPEmotionView: UIView {
         
         self.emotionCollection.reloadData()
         
-        var page = self.emotions.count / Int(MYPEmotionSmallLineNumber * MYPEmotionSmallNumber - 1)
-        page = (self.emotions.count - page * 20) >= 1 ? (page + 1) : page
+        var page = self.emotions.count / MYPEmotionSmallGroupNumber
+        page = (self.emotions.count - page * MYPEmotionSmallGroupNumber) >= 1 ? (page + 1) : page
         self.pageControl.numberOfPages = page
         
         // init menu collection view
@@ -120,11 +129,13 @@ public class MYPEmotionView: UIView {
         lay.minimumInteritemSpacing = 0
         lay.sectionInset = UIEdgeInsetsMake(0, paddingLeft, 0, paddingRight)
         self.emotionMenuCollection.collectionViewLayout = lay
+        self.emotionMenuCollection.allowsMultipleSelection = false
         self.emotionMenuCollection.register(UINib(nibName: "MYPEmotionCell", bundle: MYPEmotionBundle), forCellWithReuseIdentifier: "MYPEmotionCellMenuId")
         
         self.emotionMenuCollection.reloadData()
-        self.emotionMenuCollection.allowsMultipleSelection = false
-        self.emotionMenuCollection.selectItem(at: IndexPath(item: 0, section: 0), animated: false, scrollPosition: UICollectionViewScrollPosition.left)
+        
+        //self.emotionMenuCollection.selectItem(at: IndexPath(item: 0, section: 0), animated: false, scrollPosition: UICollectionViewScrollPosition.left)
+        self.emotionMenuCollection.cellForItem(at: IndexPath(item: 0, section: 0))?.isSelected = true
         
         self.emotionCollection.emotionCollectionDelegate = self
     }
@@ -146,7 +157,7 @@ extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.emotionCollection {
-            return (isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber) + 1
+            return isSmallItem ? (MYPEmotionSmallGroupNumber + 1) : MYPEmotionBigGroupNumber
         }
         else {
             return self.emotionSetsAll.count
@@ -162,8 +173,15 @@ extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
             cell.selectedBackgroundView = v
             cell.selectedBackgroundView?.backgroundColor = UIColor.lightGray
             
-            if indexPath.row == (isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber) {
-                cell.setDeleteCellContnet()
+            cell.isSmallType = self.isSmallItem
+            
+            if self.isSmallItem {
+                if indexPath.row == MYPEmotionSmallGroupNumber {
+                    cell.setDeleteCellContnet()
+                }
+                else {
+                    cell.setCellContnet(self.emotionForIndexPath(indexPath))
+                }
             }
             else {
                 cell.setCellContnet(self.emotionForIndexPath(indexPath))
@@ -171,6 +189,8 @@ extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
             return cell
         }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MYPEmotionCellMenuId", for: indexPath) as! MYPEmotionCell
+        // we must set smallType before setMenuContent.
+        cell.isSmallType = self.emotionSetsAll[indexPath.row].isSmallType
         cell.setMenuContent(self.emotionSetsAll[indexPath.row].coverName)
         // set selected style
         let v = UIView(frame: cell.frame)
@@ -192,15 +212,19 @@ extension MYPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
             // delegate for action
             UIDevice.current.playInputClick()
             
-            if indexPath.row == (isSmallItem ? MYPEmotionSmallGroupNumber : MYPEmotionBigGroupNumber) {
-                self.delegate?.emotionViewdidClickDelete(self)
+            if self.isSmallItem {
+                if indexPath.row == MYPEmotionSmallGroupNumber {
+                    self.delegate?.emotionViewdidClickDelete(self)
+                }
+                else {
+                    self.delegate?.emotionView(self, didClickEmotion: self.emotionForIndexPath(indexPath)!, isDefault: self.isSmallItem)
+                }
             }
             else {
                 self.delegate?.emotionView(self, didClickEmotion: self.emotionForIndexPath(indexPath)!, isDefault: self.isSmallItem)
             }
+            collectionView.deselectItem(at: indexPath, animated: true)
         }
-        
-        collectionView.deselectItem(at: indexPath, animated: true)
     }
     
     fileprivate func emotionForIndexPath(_ indexPath: IndexPath) -> MYPEmotion? {

@@ -36,8 +36,7 @@ public class MYPEmotionCell: UICollectionViewCell {
             self.emotionImageView.image = UIImage(contentsOfFile: path!)
         }
         else {
-            let path = Bundle.main.path(forResource: e.name, ofType: "png")
-            self.emotionImageView.image = UIImage(contentsOfFile: path!)
+            self.emotionImageView.image = UIImage(named: e.name)
             self.imageWidthC.constant = MYPEmotionBigHeight
             self.imageWidthC.constant = MYPEmotionBigHeight
         }
@@ -51,8 +50,13 @@ public class MYPEmotionCell: UICollectionViewCell {
     }
     
     func setMenuContent(_ name: String) {
-        let path = MYPEmotionBundle?.path(forResource: name, ofType: "png")
-        self.emotionImageView.image = UIImage(contentsOfFile: path!)
+        if self.isSmallType {
+            let path = MYPEmotionBundle?.path(forResource: name, ofType: "png")
+            self.emotionImageView.image = UIImage(contentsOfFile: path!)
+        }
+        else {
+            self.emotionImageView.image = UIImage(named: name)
+        }
     }
     
     override public func awakeFromNib() {

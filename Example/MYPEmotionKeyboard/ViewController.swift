@@ -114,19 +114,24 @@ extension ViewController: UITextViewDelegate {
 extension ViewController: MYPEmotionInputDelegate {
     
     func emotionView(_ emotionView: MYPEmotionView, didClickEmotion emotion: MYPEmotion, isDefault: Bool) {
-        let selectedRange = self.textView.selectedRange
-        let emotionString = emotion.description
-        let emotionAttributedString = NSMutableAttributedString(string: emotionString)
-        emotionAttributedString.myp_setTextBackedString(MYPTextBackedString(string: emotionString), range: emotionAttributedString.myp_rangeOfAll())
-        
-        let attributedText = NSMutableAttributedString(attributedString: self.textView.attributedText)
-        
-        attributedText.replaceCharacters(in: selectedRange, with: emotionAttributedString)
-        
-        self.textView.attributedText = attributedText
-        self.textView.selectedRange = NSMakeRange(selectedRange.location + emotionAttributedString.length, 0)
-        
-        self.textViewDidChange(self.textView)
+        if isDefault {
+            let selectedRange = self.textView.selectedRange
+            let emotionString = emotion.description
+            let emotionAttributedString = NSMutableAttributedString(string: emotionString)
+            emotionAttributedString.myp_setTextBackedString(MYPTextBackedString(string: emotionString), range: emotionAttributedString.myp_rangeOfAll())
+            
+            let attributedText = NSMutableAttributedString(attributedString: self.textView.attributedText)
+            
+            attributedText.replaceCharacters(in: selectedRange, with: emotionAttributedString)
+            
+            self.textView.attributedText = attributedText
+            self.textView.selectedRange = NSMakeRange(selectedRange.location + emotionAttributedString.length, 0)
+            
+            self.textViewDidChange(self.textView)
+        }
+        else {
+            print("It's big img emotions! Not into text, send direcitly.")
+        }
     }
     
     func emotionViewdidClickDelete(_ emotionView: MYPEmotionView) {
